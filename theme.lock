@@ -11,6 +11,8 @@ assets/lazysizes.js:
   development: 2017-06-26T15:28:17-04:00   a27b15d827d7a26f9fa58fb6b4f9d4b6
 assets/match-media.min.js:
   development: 2017-06-26T15:28:17-04:00   d0bf06c458a236dcca39b3be8cf80ec5
+assets/myscript.js:
+  development: 2018-01-08T17:27:46-04:00   3e1e4efdb6f3fb89e47f155d87b2b204
 assets/password.js:
   development: 2017-06-26T15:28:17-04:00   c6b4c16234704306bbb6129d04d7e78e
 assets/theme.js:
@@ -18,7 +20,7 @@ assets/theme.js:
 assets/theme.scss.liquid:
   development: 2018-01-08T11:21:54-04:00   357f2351d88e1760604d4a003da68d59
 assets/vendor.js:
-  development: 2017-06-26T15:28:17-04:00   cb7c4217c9b6feb844647b361accfe6c
+  development: 2018-01-08T17:26:04-04:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
   development: 2017-07-14T16:32:54-04:00   e22034e7fbb0d88ef7bef26c61744feb
 config/settings_schema.json:
@@ -28,7 +30,7 @@ layout/gift_card.liquid:
 layout/password.liquid:
   development: 2017-06-26T15:28:17-04:00   f403680b0aa8921493e38dac1f82d270
 layout/theme.liquid:
-  development: 2018-01-08T11:18:25-04:00   91a21b41c67319793c001dbf83e9400a
+  development: 2018-01-08T17:28:41-04:00   68e34b1292c3930c80bee1e19ab8fab7
 locales/de.json:
   development: 2017-06-26T15:28:19-04:00   573aafe6f0d5eeb69c7edf598c7e450f
 locales/en.default.json:
@@ -64,7 +66,7 @@ sections/custom-content-support.liquid:
 sections/custom-content.liquid:
   development: 2017-06-26T15:28:16-04:00   9abed1c1562136145fb81ea24137c7ac
 sections/feature-columns.liquid:
-  development: 2017-07-12T15:33:12-04:00   14ad2400adf308c860b2ba8594071f3c
+  development: 2018-01-08T16:41:10-04:00   073e470a6b0d6e84c698562a68042fb2
 sections/feature-row.liquid:
   development: 2017-07-10T09:36:10-04:00   f7716826775ce98aa03f7c7060ed14b7
 sections/featured-blog.liquid:
