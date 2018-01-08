@@ -12,7 +12,9 @@ assets/lazysizes.js:
 assets/match-media.min.js:
   development: 2017-06-26T15:28:17-04:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/myscript.js:
-  development: 2018-01-08T17:27:46-04:00   3e1e4efdb6f3fb89e47f155d87b2b204
+  development: 2018-01-08T18:29:56-04:00   3e1e4efdb6f3fb89e47f155d87b2b204
+assets/mystyles.scss:
+  development: 2018-01-08T17:47:35-04:00   644cea82ddd925d70243e0c4ca9ca275
 assets/password.js:
   development: 2017-06-26T15:28:17-04:00   c6b4c16234704306bbb6129d04d7e78e
 assets/theme.js:
@@ -30,7 +32,7 @@ layout/gift_card.liquid:
 layout/password.liquid:
   development: 2017-06-26T15:28:17-04:00   f403680b0aa8921493e38dac1f82d270
 layout/theme.liquid:
-  development: 2018-01-08T17:28:41-04:00   68e34b1292c3930c80bee1e19ab8fab7
+  development: 2018-01-08T17:40:26-04:00   3ef90e2ccb71ff5b1432c63a7389afcd
 locales/de.json:
   development: 2017-06-26T15:28:19-04:00   573aafe6f0d5eeb69c7edf598c7e450f
 locales/en.default.json:
@@ -121,6 +123,8 @@ sections/product-features.liquid:
   development: 2017-07-10T16:42:20-04:00   43b04dbcab6487b6151776bfa635839e
 sections/product-template.liquid:
   development: 2017-06-28T15:23:23-04:00   068d019506a0326e1e69c0dd2d95658e
+sections/protocols.liquid:
+  development: 2018-01-08T18:35:29-04:00   04638a8204bb73dc2f2f442e5a702977
 sections/quotes.liquid:
   development: 2017-07-11T17:02:33-04:00   90ed76d0c4b5cfab2c19d1f2a94e1c4a
 sections/simple-section-with-bg.liquid:
@@ -292,7 +296,7 @@ templates/page.contact.liquid:
 templates/page.liquid:
   development: 2017-06-26T15:28:19-04:00   26f97d3355078de5c6678ed3b34ad7f6
 templates/page.product-alternate.liquid:
-  development: 2017-07-13T11:18:30-04:00   cdb1843b0bf0bac81b96774b86c84a8e
+  development: 2018-01-08T18:54:24-04:00   06a1af46e32707fb363998746883ce5f
 templates/page.support.liquid:
   development: 2017-07-13T11:04:31-04:00   fe9568d1d4f3d98e0bb27ae83232d41e
 templates/password.liquid:

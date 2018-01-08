@@ -81,6 +81,7 @@
     width: 50%;
     padding-right: 100px;
     padding-left: 70px;
+    padding-top: 4%;
   }
   .content-nav {
     
@@ -92,6 +93,7 @@
     background: transparent;
     padding: 20px;
     position: relative;
+    cursor: pointer;
   }
   li.action-btn:before {
     content: '';
@@ -133,14 +135,18 @@
     -webkit-align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: absolute;
     top: 0;
     left:0;
     right:0;
+    transition: all 5s ease-out;
+    visibility: visible;
   }
   .proto-item-wrapper {
     display: none;
+    visibility: hidden;
+    transition: all 5s ease-out;
   }
   
   .invert{
@@ -186,6 +192,7 @@
       margin-bottom: 40px;
       margin-top: 30px;
     }
+  
     .video-width-text-container {
       height: auto;
       padding: 60px 0;
@@ -222,9 +229,9 @@
 
 <div class="gray-bg">
   {% section 'hero-product' %}
-  <div class="page-width product-intro">
+  {% comment %} <div class="page-width product-intro">
     <h4>Gardien acts as your Memory Assistant and your child’s Gardien Angel. Gardien works in the background, giving you peace of mind that your child will never be forgotten.</h4>
-  </div>
+  </div> {% endcomment %}
   {% section 'img-with-txt' %}
   <div class="divider"></div>
   {% section 'img-with-txt-two' %}
@@ -256,191 +263,8 @@
   {% section 'product-features' %}
 
 <!-- alert protocols section -->
-<div class="proto-container">
-  <div class="section-header text-center">
-    <h1>Multiple alert protocols</h1>
-  </div>
-  <div class="page-width proto-inner-item section-one">
-    
-    <div class="proto-item-wrapper first active">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn active"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Baby In/Out</h3>
-          <p>Your smartphone will alert you in the form of a popup message when the sensor detects a child sitting in the carseat (Baby In) and when the sensor detects a child is out of the car seat (Baby Out).
-</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-    
-    <div class="proto-item-wrapper second">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn active"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Distance</h3>
-          <p>When the parent goes too far from the child, Gardien will alert you via smartphone.</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-    
-    <div class="proto-item-wrapper third">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn active"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Movement</h3>
-          <p>In the event that you leave both your smartphone and your child in the vehicle, the Gardien app has a movement sensor. When the app detects no movement it sends alerts to your smartphone. If the alerts are not answered, the app sends alerts to your emergency contact.</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-  </div>
-  
-    <div class="page-width proto-inner-item section-two">
-    
-    <div class="proto-item-wrapper invert first active">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn active"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Temperature</h3>
-          <p>When the ambient temperature in the car exceeds 95°F or drops below 55°F an alarm message will be send to the caregiver.</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-    
-    <div class="proto-item-wrapper invert second">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn active"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Daycare</h3>
-          <p>With the Daycare Alarm feature, you can set an alarm to remind the caregiver to take the child to daycare at the specified time.</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-    
-    <div class="proto-item-wrapper invert third">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn active"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Battery</h3>
-          <p>When your battery level hits 20% or lower, your smartphone will activate the Low Battery Alert Protocol which will continue to send sound and sensory alerts until the battery is replaced.</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-  </div>
-  
-    <div class="page-width proto-inner-item section-three">
-    
-    <div class="proto-item-wrapper first active">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn active"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Car Seat Sensor</h3>
-          <p>The Car Seat Sensor detects child’s presence and activates the modules. </p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-    
-    <div class="proto-item-wrapper second">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn active"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>GPS</h3>
-        <p>If GPS is turned off, your smartphone will activate the GPS Alert Protocol and send sound and sensory alerts until GPS is turned back on.</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-    
-    <div class="proto-item-wrapper third">
-      <div class="proto-content">
-        <div class="content-nav">
-          <ul class="proto-list">
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn"><a href="#"></a></li>
-            <li class="action-btn active"><a href="#"></a></li>
-          </ul>
-        </div>
-          <h3>Bluetooth</h3>
-          <p>If Bluetooth is turned off, your smartphone will activate the Bluetooth Alert Protocol and send sound and sensory alerts until Bluetooth is turned back on.</p>
-      </div>
-      <div class="proto-image-container">
-        <div class="proto-image baby">
-          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% section 'protocols'%}
+
 <!-- get the app section -->
 {% section 'call-to-action' %}
 
@@ -458,107 +282,6 @@
     </div>
   </div>
 </div> -->
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
- (function( $ ) {
-   // sections
-   let sectionOne = $('div.section-one');
-   let sectionTwo = $('div.section-two');
-   let sectionThree = $('div.section-three');
-   
-   //child content
-   let firstSection = sectionOne.children('div.first');
-   let secondSection = sectionOne.children('div.second');
-   let thirdSection = sectionOne.children('div.third');
-   
-   let fourthSection = sectionTwo.children('div.first');
-   let fiveSection = sectionTwo.children('div.second');
-   let sixSection = sectionTwo.children('div.third');
-   
-   let sevenSection = sectionThree.children('div.first');
-   let eightSection = sectionThree.children('div.second');
-   let nineSection = sectionThree.children('div.third');
-   
-   
-   
-   let sectionBtn = $('.action-btn')
-
-   // select first section action btns
-   sectionOne.click(function (e) {
-     e.preventDefault();
-     if($(e.target).hasClass('action-btn')) {
-       console.log(e.target.tagName.toLowerCase());
-       if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
-         thirdSection.removeClass('active');
-         secondSection.removeClass('active');
-         firstSection.addClass('active');
-       }
-       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
-         firstSection.removeClass('active');
-         thirdSection.removeClass('active');
-         secondSection.addClass('active');
-       }
-       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
-         firstSection.removeClass('active');
-         secondSection.removeClass('active');
-         thirdSection.addClass('active');
-       }
-     }
-   });
-   
-   sectionTwo.click(function (e) {
-     e.preventDefault();
-     if($(e.target).hasClass('action-btn')) {
-       console.log(e.target.tagName.toLowerCase());
-       if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
-         fiveSection.removeClass('active');
-         sixSection.removeClass('active');
-         fourthSection.addClass('active');
-       }
-       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
-         fourthSection.removeClass('active');
-         sixSection.removeClass('active');
-         fiveSection.addClass('active');
-       }
-       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
-         fourthSection.removeClass('active');
-         fiveSection.removeClass('active');
-         sixSection.addClass('active');
-       }
-     }
-   });
-   
-   sectionThree.click(function (e) {
-     e.preventDefault();
-     if($(e.target).hasClass('action-btn')) {
-       console.log(e.target.tagName.toLowerCase());
-       if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
-         eightSection.removeClass('active');
-         nineSection.removeClass('active');
-         sevenSection.addClass('active');
-       }
-       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
-         sevenSection.removeClass('active');
-         nineSection.removeClass('active');
-         eightSection.addClass('active');
-       }
-       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
-         sevenSection.removeClass('active');
-         eightSection.removeClass('active');
-         nineSection.addClass('active');
-       }
-     }
-   });
-   
-  
-   
-
-})( jQuery );
-  
-</script>
 
 
 
