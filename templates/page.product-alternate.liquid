@@ -1,0 +1,565 @@
+<style>
+  .gray-bg {
+    background: #f7f7f7;
+    padding-bottom: 100px;
+  }
+  .video-width-text-container {
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    color: white;
+    background: #ee4640;
+    background: -moz-linear-gradient(left, #ee4640 0%, #ec2d8b 100%);
+    background: -webkit-linear-gradient(left, #ee4640 0%,#ec2d8b 100%);
+    background: linear-gradient(to right, #ee4640 0%,#ec2d8b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee4640', endColorstr='#ec2d8b',GradientType=1 );
+  }
+  .video-width-text,
+  .inner-content-wrapper {
+     display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-width-text {
+    width: 100%;
+    height: 100%;
+    padding: 0 110px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .rigth-wrap,
+  .left-wrap {
+    width: 50%;
+  }
+  .content p {
+    color: white;
+  }
+  .rigth-wrap .content {
+    padding: 0 75px 0 0;
+  }
+  
+  .divider {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    height: 1px;
+    background: #e6e6e6;
+    position: relative;
+    bottom: 7px;
+  }
+  
+  .video-wrapper {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .product-intro {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 690px;
+    padding: 60px 0;
+  }
+  .product-intro h4 {
+    line-height: 35px;
+  }
+  
+  
+  
+  /* ===== Protocol styles ====== */
+  .proto-container {
+    width: 100%;
+    margin: 70px auto 0;
+    background: rgba(243, 243, 243, 0.37);
+    padding: 100px 0;
+  }
+  .proto-inner-item {
+    
+  }
+  .proto-content {
+    width: 50%;
+    padding-right: 100px;
+    padding-left: 70px;
+  }
+  .content-nav {
+    
+  }
+  li.action-btn {
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    background: transparent;
+    padding: 20px;
+    position: relative;
+  }
+  li.action-btn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: lightgray;
+    -webkit-transition: all .2s ease-out;
+       -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+         -o-transition: all .2s ease-out;
+            transition: all .2s ease-out;
+  }
+  li.action-btn.active:before {
+    background: red;
+  }
+  li.action-btn:hover:before {
+    background: red;
+  }
+  .proto-image-container {
+    width: 50%;
+    max-width: 431px;
+    max-height: 319px;
+  }
+  .proto-inner-item {
+    position: relative;
+    min-height: 450px;
+  }
+  .proto-list {
+    margin-bottom: 30px;
+  }
+  .proto-list li {
+    margin-right: 5px;
+  }
+  .proto-item-wrapper.active {
+     display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+  }
+  .proto-item-wrapper {
+    display: none;
+  }
+  
+  .invert{
+     -webkit-flex-direction: row-reverse;
+     flex-direction: row-reverse;
+  }
+  
+  
+  
+  /*  ====== Media Querys ======*/
+  
+  @media (max-width: 768px) {
+  .product_image_hero {
+    top: 170px;
+    right: 180px;
+  }
+  .video-width-text, .inner-content-wrapper {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .rigth-wrap, .left-wrap, .medium-up--one-third, .proto-image-container {
+    width: 100%;
+  }
+  .rigth-wrap {
+    margin-bottom: 30px;
+  }
+}
+  
+  @media (max-width: 750px) {
+    .page-width {
+      width: 88%;
+    }
+    .proto-item-wrapper {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .proto-item-wrapper.active {
+      position: relative;
+    }
+    .proto-content {
+      width: 100%;
+      max-width: 560px;
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+    .video-width-text-container {
+      height: auto;
+      padding: 60px 0;
+    }
+    .product_image_hero {
+      top: 140px;
+      transform: scale(.9);
+    }
+    .feature-row__image-wrapper .feature-row__image,
+    .feature-row__image-wrapper {
+      max-width: 100% !important;
+    }
+    .video-width-text {
+      padding: 0 10%;
+    }
+    .rigth-wrap .content {
+      padding: 0;
+    }
+  }
+  @media (max-width: 540px) {
+  .product_hero_right  {
+    display: none;
+  }
+  .product_hero_left {
+    width: 100%;
+  }
+  .proto-content {
+    padding: 0;
+  }
+
+}
+</style>
+
+
+<div class="gray-bg">
+  {% section 'hero-product' %}
+  <div class="page-width product-intro">
+    <h4>Gardien acts as your Memory Assistant and your child’s Gardien Angel. Gardien works in the background, giving you peace of mind that your child will never be forgotten.</h4>
+  </div>
+  {% section 'img-with-txt' %}
+  <div class="divider"></div>
+  {% section 'img-with-txt-two' %}
+</div>
+
+<!-- how does work? section -->
+<div class="video-width-text-container">
+  <div class="video-width-text">
+    <div class="inner-content-wrapper">
+      <div class="rigth-wrap">
+        <div class="content">
+          <h4>How does it work?</h4>
+          <h2>Peace of mind in the palm of your hand.</h2>
+          <p>The car seat sensor pad detects the presence of a child. A signal taken from the car seat sensor pad is communicated wirelessly to the smartphone module. The smartphone then begins monitoring the presence of the child and will alert you if the child is forgotten in the vehicle.</p>
+        </div>
+      </div>
+      <div class="left-wrap">
+        <div class="content">
+          <div class="video-wrapper">
+            <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- features section -->
+  {% section 'product-features' %}
+
+<!-- alert protocols section -->
+<div class="proto-container">
+  <div class="section-header text-center">
+    <h1>Multiple alert protocols</h1>
+  </div>
+  <div class="page-width proto-inner-item section-one">
+    
+    <div class="proto-item-wrapper first active">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn active"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Baby In/Out</h3>
+          <p>Your smartphone will alert you in the form of a popup message when the sensor detects a child sitting in the carseat (Baby In) and when the sensor detects a child is out of the car seat (Baby Out).
+</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="proto-item-wrapper second">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn active"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Distance</h3>
+          <p>When the parent goes too far from the child, Gardien will alert you via smartphone.</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="proto-item-wrapper third">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn active"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Movement</h3>
+          <p>In the event that you leave both your smartphone and your child in the vehicle, the Gardien app has a movement sensor. When the app detects no movement it sends alerts to your smartphone. If the alerts are not answered, the app sends alerts to your emergency contact.</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="page-width proto-inner-item section-two">
+    
+    <div class="proto-item-wrapper invert first active">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn active"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Temperature</h3>
+          <p>When the ambient temperature in the car exceeds 95°F or drops below 55°F an alarm message will be send to the caregiver.</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="proto-item-wrapper invert second">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn active"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Daycare</h3>
+          <p>With the Daycare Alarm feature, you can set an alarm to remind the caregiver to take the child to daycare at the specified time.</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="proto-item-wrapper invert third">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn active"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Battery</h3>
+          <p>When your battery level hits 20% or lower, your smartphone will activate the Low Battery Alert Protocol which will continue to send sound and sensory alerts until the battery is replaced.</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="page-width proto-inner-item section-three">
+    
+    <div class="proto-item-wrapper first active">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn active"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Car Seat Sensor</h3>
+          <p>The Car Seat Sensor detects child’s presence and activates the modules. </p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="proto-item-wrapper second">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn active"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>GPS</h3>
+        <p>If GPS is turned off, your smartphone will activate the GPS Alert Protocol and send sound and sensory alerts until GPS is turned back on.</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="proto-item-wrapper third">
+      <div class="proto-content">
+        <div class="content-nav">
+          <ul class="proto-list">
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn"><a href="#"></a></li>
+            <li class="action-btn active"><a href="#"></a></li>
+          </ul>
+        </div>
+          <h3>Bluetooth</h3>
+          <p>If Bluetooth is turned off, your smartphone will activate the Bluetooth Alert Protocol and send sound and sensory alerts until Bluetooth is turned back on.</p>
+      </div>
+      <div class="proto-image-container">
+        <div class="proto-image baby">
+          <img class="baby" src="https://cdn.shopify.com/s/files/1/2122/5521/files/product_58978b68-2ee5-4a2b-821a-01d6caa705bd_900x.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- get the app section -->
+{% section 'call-to-action' %}
+
+
+<!-- <div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+ (function( $ ) {
+   // sections
+   let sectionOne = $('div.section-one');
+   let sectionTwo = $('div.section-two');
+   let sectionThree = $('div.section-three');
+   
+   //child content
+   let firstSection = sectionOne.children('div.first');
+   let secondSection = sectionOne.children('div.second');
+   let thirdSection = sectionOne.children('div.third');
+   
+   let fourthSection = sectionTwo.children('div.first');
+   let fiveSection = sectionTwo.children('div.second');
+   let sixSection = sectionTwo.children('div.third');
+   
+   let sevenSection = sectionThree.children('div.first');
+   let eightSection = sectionThree.children('div.second');
+   let nineSection = sectionThree.children('div.third');
+   
+   
+   
+   let sectionBtn = $('.action-btn')
+
+   // select first section action btns
+   sectionOne.click(function (e) {
+     e.preventDefault();
+     if($(e.target).hasClass('action-btn')) {
+       console.log(e.target.tagName.toLowerCase());
+       if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
+         thirdSection.removeClass('active');
+         secondSection.removeClass('active');
+         firstSection.addClass('active');
+       }
+       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
+         firstSection.removeClass('active');
+         thirdSection.removeClass('active');
+         secondSection.addClass('active');
+       }
+       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
+         firstSection.removeClass('active');
+         secondSection.removeClass('active');
+         thirdSection.addClass('active');
+       }
+     }
+   });
+   
+   sectionTwo.click(function (e) {
+     e.preventDefault();
+     if($(e.target).hasClass('action-btn')) {
+       console.log(e.target.tagName.toLowerCase());
+       if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
+         fiveSection.removeClass('active');
+         sixSection.removeClass('active');
+         fourthSection.addClass('active');
+       }
+       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
+         fourthSection.removeClass('active');
+         sixSection.removeClass('active');
+         fiveSection.addClass('active');
+       }
+       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
+         fourthSection.removeClass('active');
+         fiveSection.removeClass('active');
+         sixSection.addClass('active');
+       }
+     }
+   });
+   
+   sectionThree.click(function (e) {
+     e.preventDefault();
+     if($(e.target).hasClass('action-btn')) {
+       console.log(e.target.tagName.toLowerCase());
+       if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
+         eightSection.removeClass('active');
+         nineSection.removeClass('active');
+         sevenSection.addClass('active');
+       }
+       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
+         sevenSection.removeClass('active');
+         nineSection.removeClass('active');
+         eightSection.addClass('active');
+       }
+       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
+         sevenSection.removeClass('active');
+         eightSection.removeClass('active');
+         nineSection.addClass('active');
+       }
+     }
+   });
+   
+  
+   
+
+})( jQuery );
+  
+</script>
+
+
+
+

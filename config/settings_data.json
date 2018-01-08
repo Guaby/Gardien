@@ -1,0 +1,916 @@
+{
+  "current": {
+    "color_text": "#3d4246",
+    "color_body_text": "#788188",
+    "color_sale_text": "#ff0000",
+    "color_borders": "#e8e9eb",
+    "color_button": "#0084ff",
+    "color_button_text": "#fff",
+    "color_small_button": "#fff",
+    "color_small_button_text": "#3d4246",
+    "color_text_field": "#fff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": "0",
+    "color_body_bg": "#fff",
+    "type_header_family": "Google_Ubuntu_400_sans",
+    "type_header_base_size": "28px",
+    "type_base_family": "Google_Work+Sans_400_sans",
+    "type_base_size": "14px",
+    "type_bold_product_titles": true,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/logo_76c5d98b-71e2-48a2-8e36-d0df5b8fc199.png",
+          "logo_max_width": "140",
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#000000",
+          "color_text": "#fff"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/dakota-corbin-243775.jpg",
+          "alignment": "bottom",
+          "title": "Let Us Be Your Gardien Angel.",
+          "text": "<p>The most important reminder in your vehicle.<\/p>",
+          "hero_size": "x-large",
+          "text_size": "large",
+          "button_label": "pre-order now",
+          "button_link": "shopify:\/\/products\/product-one"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/phone_1e3ec24d-9002-48b0-8ad1-a0121ee5203c.png",
+          "layout": "right",
+          "title": "Each year an average, 95 children die inside a vehicle due to heatstroke.",
+          "text": "<p>Gardien was created to alert caregivers when a child has been left in a vehicle. Using the state of the art technology aimed to cover almost every scenario that could lead to such an unwanted event.<\/p>\n<p><\/p>",
+          "button_label": "pre-order now",
+          "button_link": "shopify:\/\/products\/product-one"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_linklist": "footer",
+          "footer_linklist_two": "main-menu",
+          "footer_newsletter_enable": true,
+          "show_payment_icons": true
+        }
+      },
+      "1498660476911": {
+        "type": "test",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/product.png",
+          "alignment": "center",
+          "title": "Simple yet powerfull hardware and software",
+          "text": "<p>Our app alerts the user with wireless alarms and alert modules such as text messages, emails, sounds, as well as visual and sensory alarms when the smartphone goes too far from the car seat. If these alerts are missed, the app will immediately reach out to a list of contacts including emergency services.<\/p>",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "read more",
+          "button_link": "shopify:\/\/pages\/product"
+        }
+      },
+      "1498664811325": {
+        "type": "simple-section-with-bg",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/bg-bb.png",
+          "alignment": "center",
+          "title": "Do what you want",
+          "second_title": "Feel secure at all times",
+          "text": "<p>Gardien is a system that works for you and your family without getting in the way of your everyday routine.<\/p>",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "Why Gardien?",
+          "button_link": "shopify:\/\/pages\/product"
+        }
+      },
+      "1498671531020": {
+        "type": "feature-columns",
+        "blocks": {
+          "1498671531020-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/wheel_5696fef4-b63b-46ff-b660-ebbf58841158.png",
+              "title": "Effortless installation",
+              "text": "<p>Minimal installation required! 15 minutes or less is all it takes to install the hardware and app.<\/p>\n<p><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1498671531020-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/heart.png",
+              "title": "Reliable Technology",
+              "text": "<p>Our highly reliable low power system, compatible with iOS and Android, works for months using the latest Bluetooth and sensing technologies.<\/p>\n<p><\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1498671531020-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/set.png",
+              "title": "Monitors Critical Aspects",
+              "text": "<p>Keep your child where it belongs, close to you. Temperature, Distance and Movement are some aspects Gardien is always looking for.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1498671531020-0",
+          "1498671531020-1",
+          "1498671531020-2"
+        ],
+        "settings": {
+          "title": "Text columns with images",
+          "align_text": "center"
+        }
+      },
+      "1498673394963": {
+        "type": "quotes",
+        "blocks": {
+          "1498673394963-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "1498673394963-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "1498673394963-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "1498673394963-0",
+          "1498673394963-1",
+          "1498673394963-2"
+        ],
+        "settings": {
+          "title": "Testimonials"
+        }
+      },
+      "test": {
+        "type": "test",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "title": "My hero section",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "hero_about": {
+        "type": "hero_about",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/test-bg.png",
+          "alignment": "center",
+          "title": "About Gardien",
+          "text": "<p>Here at Gardien, we weren&rsquo;t satisfied with claiming that it couldn't happen to us, because it did.<\/p>",
+          "hero_size": "small",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "hero-product": {
+        "type": "hero-product",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/test-bg.png",
+          "alignment": "bottom",
+          "title": "Your Memory  Assistant",
+          "text": "<p>Gardien App<\/p>",
+          "last_text": "Avialable for iOS and Android devices.",
+          "hero_size": "x-large",
+          "text_size": "medium",
+          "button_label": "pre-order now",
+          "button_link": "shopify:\/\/products\/product-one"
+        }
+      },
+      "img-with-txt": {
+        "type": "img-with-txt",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/app.png",
+          "layout": "left",
+          "title": "Smartphone App Module",
+          "text": "<p>Our app alerts the user with wireless alarms and alert modules such as text messages, emails, sounds, as well as visual and sensory alarms when the smartphone goes too far from the car seat. If these alerts are missed, the app will immediately reach out to a list of contacts including emergency services.<\/p>\n<p><\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "img-with-txt-two": {
+        "type": "img-with-txt-two",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/product_58978b68-2ee5-4a2b-821a-01d6caa705bd.png",
+          "layout": "left",
+          "title": "Car Seat Sensor Pad & Module",
+          "text": "<p>Detects child&rsquo;s presence and activates the modules.&nbsp;<\/p>\n<p><\/p>",
+          "button_label": "pre-order now",
+          "button_link": "shopify:\/\/products\/product-one"
+        }
+      },
+      "product-features": {
+        "type": "product-features",
+        "blocks": {
+          "1499362164838": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_5e622792-cc1b-46d7-93db-0090218942a5.png",
+              "title": "Bluetooth 4.0 (BLE)",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499362943514": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_98f4a2e7-f2ae-4468-9036-d0e1a4e25f42.png",
+              "title": "iOS 9 or later & Android 4.1 or later",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499362956967": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "title": "English & Spanish",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499362982285": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "title": "GPS for accurate event location",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499363014073": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "title": "Accelerometer",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499363037614": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "title": "Cellular Network",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499695976294": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "title": "Easy to use and install",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499696016410": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "title": "Tested with real parents",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499696034620": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "title": "Send alerts via text message and email",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1499362164838",
+          "1499362943514",
+          "1499362956967",
+          "1499362982285",
+          "1499363014073",
+          "1499363037614",
+          "1499695976294",
+          "1499696016410",
+          "1499696034620"
+        ],
+        "settings": {
+          "title": "Text columns with images",
+          "align_text": "left"
+        }
+      },
+      "call-to-action": {
+        "type": "call-to-action",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "title": "Get the Gardien app",
+          "second_title": "",
+          "text": "",
+          "hero_size": "x-small",
+          "text_size": "medium",
+          "button_label": "pre-order now",
+          "button_link": "shopify:\/\/products\/product-one"
+        }
+      },
+      "img-width-txt-about": {
+        "type": "img-width-txt-about",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/app_672d1244-ad2e-48e8-bf66-af1294ff1772.png",
+          "layout": "right",
+          "title": "Why this product is important?",
+          "text": "<p>Heatstroke is one of the biggest threats to a child when left in a vehicle. In just 10 minutes, the temperature inside a vehicle can raise 19 degrees and a child's body overheats 3-5 times faster than an adult body.<\/p>",
+          "text2": "<p>Gardien was created to tackle this very real and often fatal, completely preventable problem. With Gardien, you will feel at ease knowing your child is safe and out of harm&rsquo;s way<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "custom-content-about": {
+        "type": "custom-content-about",
+        "blocks": {
+          "1499785628639": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/they_4e6d0b85-9a65-416e-8d0d-2bededa652d1.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "1499805265908": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p><em>It&rsquo;s a simple equation: an overloaded mind, a sudden change in routine, and a minor distraction is all it takes for a parent to leave their child behind. Have you ever forgotten your keys? That&rsquo;s your brain skipping a beat. Gardien was conceived to tackle this very real and often fatal, completely preventable problem.We is are parents helping parents, making sure this never happens to anyone.&rdquo;<\/em><\/p>",
+              "width": "66%",
+              "alignment": "top-middle",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1499785628639",
+          "1499805265908"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "1499786688489": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "1499786690067": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "1499786694308": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "1499786712895": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "1499786688489",
+          "1499786690067",
+          "1499786694308",
+          "1499786712895"
+        ],
+        "settings": {
+          "title": "Testimonials"
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "1499790431846": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499790445580": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1499790452307": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1499790431846",
+          "1499790445580",
+          "1499790452307"
+        ],
+        "settings": {
+          "title": "Certifications",
+          "align_text": "center"
+        }
+      },
+      "hero-support": {
+        "type": "hero-support",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/support-bg.png",
+          "alignment": "center",
+          "title": "We are here to help.",
+          "text": "<p>From product installation to any problems with the normal use of the product, the smartphone application will contain support tools to help you every step of the way.&rdquo;<\/p>",
+          "hero_size": "large",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "img-with-txt-support-1": {
+        "type": "img-with-txt-support-1",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/app_672d1244-ad2e-48e8-bf66-af1294ff1772.png",
+          "layout": "left",
+          "title": "User Guide",
+          "text": "<p>Heatstroke is one of the biggest threats to a child when left in a vehicle. In just 10 minutes, the temperature inside a vehicle can raise 19 degrees and a child's body overheats 3-5 times faster than an adult body<\/p>",
+          "text2": "<p>Gardien was created to tackle this very real and often fatal, completely preventable problem. With Gardien, you will feel at ease knowing your child is safe and out of harm&rsquo;s way<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "img-with-txt-support-2": {
+        "type": "img-with-txt-support-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/product_8be0d25b-d1ea-4310-931a-e71146173252.png",
+          "layout": "left",
+          "title": "Quick Start Guide",
+          "text": "<p>Heatstroke is one of the biggest threats to a child when left in a vehicle. In just 10 minutes, the temperature inside a vehicle can raise 19 degrees and a child's body overheats 3-5 times faster than an adult body<\/p>",
+          "text2": "<p>Gardien was created to tackle this very real and often fatal, completely preventable problem. With Gardien, you will feel at ease knowing your child is safe and out of harm&rsquo;s way<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "img-with-txt-about-2": {
+        "type": "img-with-txt-about-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/app_672d1244-ad2e-48e8-bf66-af1294ff1772.png",
+          "layout": "right",
+          "title": "Why did we create Gardien?",
+          "text": "<p>Gardien was created by Mark Gomez and Victor ? both engineers as well as parents. We never thought it could happen to us, but it did. We unwillingly left our child in the car. We were fortunate enough to have returned to our vehicle before any damage was done, but this event shook us and triggered a sudden and deep empathy for parents who weren&rsquo;t as lucky.<\/p>",
+          "text2": "<p>As engineers we wanted to understand the cause behind such a fatal occurrence. This wasn&rsquo;t neglect, it&rsquo;s Forgotten Child Syndrome, and the statistics shocked us. Each year on average, 95 children die inside a vehicle due to heatstroke. It didn&rsquo;t matter who the person was and it isn&rsquo;t about how much love you have have for your child.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1499870041777": {
+        "type": "call-to-action",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "title": "Get the Gardien App",
+          "second_title": "My hero section",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "hero_size": "x-small",
+          "text_size": "medium",
+          "button_label": "pre-order now",
+          "button_link": "shopify:\/\/products\/product-one"
+        }
+      }
+    },
+    "content_for_index": [
+      "hero",
+      "feature-row",
+      "1498660476911",
+      "1498664811325",
+      "1498671531020",
+      "1498673394963",
+      "1499870041777"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#7796A8",
+      "color_borders": "#e8e9eb",
+      "color_button": "#7796A8",
+      "color_button_text": "#fff",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": "0.25",
+      "color_body_bg": "#fff",
+      "type_header_family": "Google_Work+Sans_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Work+Sans_400_sans",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#757575",
+      "color_sale_text": "#ff574f",
+      "color_borders": "#e4e4e4",
+      "color_button": "#ff574f",
+      "color_button_text": "#ffffff",
+      "color_small_button": "#eaeaea",
+      "color_small_button_text": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": "0.3",
+      "color_body_bg": "#f8f8f8",
+      "type_header_family": "Google_Muli_600_sans",
+      "type_header_base_size": "26px",
+      "type_base_family": "Google_Muli_600_sans",
+      "type_base_size": "18px",
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": "135",
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": "6000",
+            "slideshow_height": "medium",
+            "text_size": "medium"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": "3",
+            "rows": "1",
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist": "main-menu",
+            "footer_linklist_two": "footer",
+            "footer_newsletter_enable": true,
+            "show_payment_icons": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": "2",
+            "rows": "2",
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+            "show_button": true
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": "3"
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

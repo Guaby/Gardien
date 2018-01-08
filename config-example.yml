@@ -1,0 +1,10 @@
+---
+store: example.myshopify.com
+password: secret
+theme_id: "live"
+bucket-size: 40
+refill_rate: 2
+ingore_files:
+   - "*.swap"
+   - "*~"
+   - "config/settings_data.json"

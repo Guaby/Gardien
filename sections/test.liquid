@@ -1,0 +1,289 @@
+{% if template == 'index' %}
+<style>
+.mega-title,
+.mega-subtitle {
+  width:100%;
+  max-width: 100%;
+  margin:0;
+}
+.btn {
+  border-radius: 5px;
+}
+.hero__btn {
+  color: white;
+  background: #ee4640; /* Old browsers */
+  background: -moz-linear-gradient(left, #ee4640 0%, #ec2d8b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ee4640 0%,#ec2d8b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ee4640 0%,#ec2d8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee4640', endColorstr='#ec2d8b',GradientType=1 ); /* IE6-9 */
+}
+.play-container, .circle {
+  display: -webkit-flex
+ -webkit-justify-content: center;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 50%;
+  align-items: center;
+}
+.play-container {
+  width: 150px;
+  height: 150px;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.5)
+}
+.my_height {
+  min-height: 475px;
+  height: 575px;
+  border-radius: 10px;
+}
+#shopify-section-1498660476911 {
+  padding-left: 55px;
+  padding-right: 55px;
+  background-color: whitesmoke;
+}
+.mega-title.smaller {
+  font-size: 2.2em;
+  width: 90%;
+  margin: 10px 0;
+}
+.mega-subtitle.smaller {
+  font-size: 1em;
+}
+  
+@media only screen and (max-width: 1430px) {
+
+  .my_height {
+    height: inherit;
+  }
+
+}
+@media only screen and (max-width: 1235px) {
+
+  .content_on_top {
+    width: 38%;
+  }
+
+}
+@media only screen and (max-width: 1100px) {
+
+  .my_height {
+    height: 450px;
+    min-height: 300px;
+  }
+
+}
+@media only screen and (max-width: 1054px) {
+
+  .content_on_top {
+    width: 50%;
+    background: transparent;
+  }
+
+}
+@media only screen and (max-width: 924px) {
+
+  .content_on_top {
+    width: 60%;
+  }
+
+}
+@media only screen and (max-width: 774px) {
+
+  .mega-title.smaller {
+    font-size: 2em;
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+
+  .hero--x-large {
+    height: 100vh;
+    min-height: 775px;
+  }
+
+}
+@media only screen and (max-width: 749px) {
+
+  #shopify-section-1498660476911,
+  #shopify-section-1498664811325 {
+    padding: 25px;
+
+  }
+}
+@media only screen and (max-width: 560px) {
+
+  .mega-title.smaller {
+    font-size: 1.7em;
+  }
+  .content_on_top {
+    width: 80%;
+  }
+}
+</style>
+{% endif %}
+
+<div class="hero hero--{{ section.settings.hero_size }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box ratio-container lazyload js my_height"
+     {% if section.settings.image %}
+     data-bgset="{% include 'bgset', image: section.settings.image %}"
+     data-sizes="auto"
+     data-parent-fit="cover"
+     style="background-position: {{ section.settings.alignment }}; background-image: url('{{ section.settings.image | img_url: '300x300' }});"
+     {% endif %}>
+  {% if section.settings.image == blank %}
+    <div class="placeholder-background">
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {% endif %}
+  <div class="hero__inner">
+      <div class="page-width content_on_top"> <!-- text-center -->
+        <div class="hero-content">
+        {% if section.settings.title != blank %}
+          <h2 class="h1 mega-title smaller{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title | escape }}</h2>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          <div class="rte-setting mega-subtitle smaller{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>
+        {% endif %}
+        {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+          <a href="{{ section.settings.button_link }}" class="btn hero__btn">
+            {{ section.settings.button_label | escape }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<noscript>
+  <div class="hero hero--{{ section.settings.hero_size }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %}"{% if section.settings.image %} style="background-image: url('{{ section.settings.image | img_url: '2048x' }}'); background-position: center {{ section.settings.alignment }};"{% endif %}></div>
+</noscript>
+
+{% schema %}
+  {
+    "name": "my-hero",
+    "class": "index-section index-section--flush",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "My hero section"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+      },
+      {
+        "type": "select",
+        "id": "hero_size",
+        "label": "Section height",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Extra Small",
+            "value": "x-small"
+          },
+          {
+            "label": "Small",
+            "value": "small"
+          },
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          },
+          {
+            "label": "Extra Large",
+            "value": "x-large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "My cutome section",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+.content_on_top {
+    width: 33%;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    background: #333333;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
