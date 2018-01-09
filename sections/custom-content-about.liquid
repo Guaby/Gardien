@@ -28,6 +28,11 @@
           {%- assign block_width = 'one-whole' -%}
       {% endcase %}
 
+      {% case block.settings.Display %}
+        {% when 'flex' %}
+          {%- assign display = 'flex' -%}
+      {% endcase %}
+
       {% if block.type == 'image' %}
         {% capture img_id %}CustomImage--{{ forloop.index }}-{{ block.settings.image.id }}{% endcapture %}
         {% capture img_wrapper_id %}CustomImageWrapper--{{ forloop.index }}-{{ block.settings.image.id }}{% endcapture %}
@@ -37,9 +42,10 @@
         {% endunless %}
       {% endif %}
 
-      <div class="custom__item custom__item--{{block.id}} {{ block_width }} {% if block.settings.alignment %}align--{{ block.settings.alignment }}{% endif %}" {{ block.shopify_attributes }}>
+      <div class="custom__item custom__item--{{block.id}} {{ block_width }} {% if block.settings.alignment %}align--{{ block.settings.alignment }}{% endif %} about-img" {{ block.shopify_attributes }}>
         <div class="custom__item-inner custom__item-inner--{{ block.type }}"{% if block.type == 'image' %} id="{{ img_wrapper_id }}"{% endif %}>
           {% case block.type %}
+          
             {% when 'image' %}
               {% if block.settings.image != blank %}
                 {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -60,15 +66,24 @@
               {% else %}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {% endif %}
+
             {% when 'text' %}
               <div class="medium-up--text-{{ block.settings.align_text }}">
-                {% if block.settings.title != blank %}
-                  <h4 class="h3">{{ block.settings.title | escape }}</h4>
+                <h4>Our Founders</h4>
+                <div class="display-{{ block.settings.Display }}">
+                  {% if block.settings.title != blank %}
+                  <div class="inner-wrapper rte-setting">
+                    <p>{{ block.settings.title }}</p>
+                 </div>
                 {% endif %}
                 {% if block.settings.text != blank %}
-                  <div class="rte-setting">{{ block.settings.text }}</div>
+                  <div class="inner-wrapper rte-setting">
+                    {{ block.settings.text }}
+                  </div>
                 {% endif %}
+                </div>
               </div>
+
             {% when 'video' %}
               <div class="video-wrapper">
                 {% if block.settings.video_url == blank %}
@@ -82,6 +97,7 @@
                   {% endif %}
                 {% endif %}
               </div>
+
             {% when 'product' %}
               {%- assign product = all_products[block.settings.product] -%}
               {% if product.title.size > 0 %}
@@ -103,6 +119,7 @@
                   </a>
                 </div>
               {% endif %}
+              
             {% when 'collection' %}
               {%- assign collection = collections[block.settings.collection] -%}
               {% include 'collection-grid-item' %}
@@ -150,6 +167,22 @@
             "id": "text",
             "label": "Text",
             "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          },
+          {
+            "type": "select",
+            "id": "Display",
+            "label": "Display",
+            "default": "block",
+            "options": [
+              {
+                "value": "block",
+                "label": "block"
+              },
+              {
+                "value": "flex",
+                "label": "flex"
+              }
+            ]
           },
           {
             "type": "select",

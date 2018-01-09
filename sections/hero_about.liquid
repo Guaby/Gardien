@@ -9,18 +9,9 @@
   display: flex;
   align-items: center;
 }
-.mega-subtitle, 
-.hero-content,
 .mega-title.hero_heading {
-  margin: 0 auto;
-}
-.mega-title.hero_heading {
-  width: 65%;
   font-size: 4em;
   margin-bottom: 20px;
-}
-.mega-subtitle {
-  max-width: 60%;
 }
 .btn {
   border-radius: 5px;
@@ -33,9 +24,6 @@
   background: linear-gradient(to right, #ee4640 0%,#ec2d8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee4640', endColorstr='#ec2d8b',GradientType=1 ); /* IE6-9 */
 }
-.hero-content {
-  text-align: center;
-}
   
 @media only screen and (min-width: 750px) {
 
@@ -46,7 +34,6 @@
 
 }
 
-  
 </style>
 
 <div class="hero hero--{{ section.settings.hero_size }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box ratio-container lazyload js"
