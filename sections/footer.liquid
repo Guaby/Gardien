@@ -21,13 +21,13 @@
       <div class="footer-logo-parent grid__item{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist_two != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist_two == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
         {%- assign footer_linklist = section.settings.footer_linklist -%}
         {% if linklists[footer_linklist].links.size > 0 %}
-<!--           <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
+ <!--           <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
             {% for link in linklists[footer_linklist].links %}
               <li class="site-footer__linklist-item">
                 <a href="{{ link.url }}">{{ link.title }}</a>
               </li>
             {% endfor %}
-          </ul> -->
+          </ul> --> 
         <a href="/" class="logo-footer">
           <?xml version="1.0" encoding="utf-8"?>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
