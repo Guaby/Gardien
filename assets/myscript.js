@@ -531,8 +531,11 @@
 
    }
 
+   // slide 1
    initSlider();
+   // slide 2
    initSlider2();
+   // slide 3
    initSlider3();
 
 })(jQuery);
