@@ -36,7 +36,7 @@
             {% capture wrapper_id %}TextColumnImageWrapper-{{ block.id }}{% endcapture %}
             {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             {% include 'image-style' with image: block.settings.image, width: max_height, height: max_height, small_style: true, wrapper_id: wrapper_id, img_id: img_id %}
-            <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js my_row_itmes">
+            <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js my_row_itmes icon">
               <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;">
                 <img id="{{ img_id }}"
                      class="feature-row__image lazyload"
@@ -173,13 +173,6 @@
 
 .flex-parent {
 
-}
-.my_row_itmes {
-  margin: 0 15px 0 0;
-  height: 45px;
-  width: 45px;
-  min-width: 45px;
-  min-height: 45px;
 }
 .col_txt {
   font-size: 1em;

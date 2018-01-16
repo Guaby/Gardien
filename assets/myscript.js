@@ -9,26 +9,26 @@
 
 (function( $ ) {
    // sections
-   let sectionOne = $('div.section-one');
-   let sectionTwo = $('div.section-two');
-   let sectionThree = $('div.section-three');
+//    let sectionOne = $('div.section-one');
+//    let sectionTwo = $('div.section-two');
+//    let sectionThree = $('div.section-three');
 
-   //child content
-   let firstSection = sectionOne.children('div.first');
-   let secondSection = sectionOne.children('div.second');
-   let thirdSection = sectionOne.children('div.third');
+//    //child content
+//    let firstSection = sectionOne.children('div.first');
+//    let secondSection = sectionOne.children('div.second');
+//    let thirdSection = sectionOne.children('div.third');
 
-   let fourthSection = sectionTwo.children('div.first');
-   let fiveSection = sectionTwo.children('div.second');
-   let sixSection = sectionTwo.children('div.third');
+//    let fourthSection = sectionTwo.children('div.first');
+//    let fiveSection = sectionTwo.children('div.second');
+//    let sixSection = sectionTwo.children('div.third');
 
-   let sevenSection = sectionThree.children('div.first');
-   let eightSection = sectionThree.children('div.second');
-   let nineSection = sectionThree.children('div.third');
+//    let sevenSection = sectionThree.children('div.first');
+//    let eightSection = sectionThree.children('div.second');
+//    let nineSection = sectionThree.children('div.third');
 
 
 
-   let sectionBtn = $('.action-btn');
+//    let sectionBtn = $('.action-btn');
 
    // select first section action btns
 //    sectionOne.click(function (e) {
@@ -56,53 +56,53 @@
 
 
    
-    sectionTwo.click(function (e) {
-        e.preventDefault();
-    if($(e.target).hasClass('action-btn')) {
-        console.log(e.target.tagName.toLowerCase());
-    if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
-        fiveSection.removeClass('active');
-    sixSection.removeClass('active');
-         fourthSection.addClass('active');
-       }
-       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
-        fourthSection.removeClass('active');
-    sixSection.removeClass('active');
-         fiveSection.addClass('active');
-       }
-       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
-        fourthSection.removeClass('active');
-    fiveSection.removeClass('active');
-         sixSection.addClass('active');
-       }
-     }
-   });
+//     sectionTwo.click(function (e) {
+//         e.preventDefault();
+//     if($(e.target).hasClass('action-btn')) {
+//         console.log(e.target.tagName.toLowerCase());
+//     if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
+//         fiveSection.removeClass('active');
+//     sixSection.removeClass('active');
+//          fourthSection.addClass('active');
+//        }
+//        if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
+//         fourthSection.removeClass('active');
+//     sixSection.removeClass('active');
+//          fiveSection.addClass('active');
+//        }
+//        if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
+//         fourthSection.removeClass('active');
+//     fiveSection.removeClass('active');
+//          sixSection.addClass('active');
+//        }
+//      }
+//    });
 
 
 
 
 
-   sectionThree.click(function (e) {
-        e.preventDefault();
-    if($(e.target).hasClass('action-btn')) {
-        console.log(e.target.tagName.toLowerCase());
-    if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
-        eightSection.removeClass('active');
-    nineSection.removeClass('active');
-         sevenSection.addClass('active');
-       }
-       if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
-        sevenSection.removeClass('active');
-    nineSection.removeClass('active');
-         eightSection.addClass('active');
-       }
-       if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
-        sevenSection.removeClass('active');
-    eightSection.removeClass('active');
-         nineSection.addClass('active');
-       }
-     }
-   });
+//    sectionThree.click(function (e) {
+//         e.preventDefault();
+//     if($(e.target).hasClass('action-btn')) {
+//         console.log(e.target.tagName.toLowerCase());
+//     if($(e.target).index() === 0 || $(e.target).is($('ul.proto-list:nth-child(1)'))) {
+//         eightSection.removeClass('active');
+//     nineSection.removeClass('active');
+//          sevenSection.addClass('active');
+//        }
+//        if($(e.target).index() === 1 || $(e.target).is($('ul.proto-list:nth-child(2)'))) {
+//         sevenSection.removeClass('active');
+//     nineSection.removeClass('active');
+//          eightSection.addClass('active');
+//        }
+//        if($(e.target).index() === 2 || $(e.target).is($('ul.proto-list:nth-child(3)'))) {
+//         sevenSection.removeClass('active');
+//     eightSection.removeClass('active');
+//          nineSection.addClass('active');
+//        }
+//      }
+//    });
 
    // =========== slider interactions ===============
    let protocols = $('.proto-inner-item');
@@ -261,7 +261,7 @@
                mouseDragging: 1,
                touchDragging: 1,
                releaseSwing: 1,
-               startAt: 0,
+               startAt: 1,
                scrollBy: 1,
                speed: 800,
                elasticBounds: 1,
@@ -403,7 +403,7 @@
                mouseDragging: 1,
                touchDragging: 1,
                releaseSwing: 1,
-               startAt: 0,
+               startAt: 1,
                scrollBy: 1,
                speed: 800,
                elasticBounds: 1,
