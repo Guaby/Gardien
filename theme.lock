@@ -9,12 +9,16 @@ assets/ico-select.svg.liquid:
   development: 2017-06-26T15:28:17-04:00   28de0c672609528b7c55f6f47810784b
 assets/lazysizes.js:
   development: 2017-06-26T15:28:17-04:00   a27b15d827d7a26f9fa58fb6b4f9d4b6
+assets/ly-rtl.css.liquid:
+  development: 2018-01-16T19:36:24-04:00   1b5e650e983821f166b74d5819aa2d2e
+assets/ly-select-box.js:
+  development: 2018-01-16T19:36:35-04:00   c91fa5c195ff06617a093065d9f95d1b
 assets/match-media.min.js:
   development: 2017-06-26T15:28:17-04:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/myscript.js:
   development: 2018-01-16T12:57:01-04:00   1b855e1482318b6572589c72b87abe34
 assets/mystyles.scss:
-  development: 2018-01-16T19:21:36-04:00   9299f5fc6a59bd80e691f744cefbc6f0
+  development: 2018-01-16T20:21:37-04:00   f0ab1695627852fbad5ebf832de9d7bb
 assets/password.js:
   development: 2017-06-26T15:28:17-04:00   c6b4c16234704306bbb6129d04d7e78e
 assets/theme.js:
@@ -24,15 +28,15 @@ assets/theme.scss.liquid:
 assets/vendor.js:
   development: 2018-01-11T17:12:14-04:00   346ca1064dcd62fd7765152d5733edae
 config/settings_data.json:
-  development: 2017-07-14T16:32:54-04:00   e22034e7fbb0d88ef7bef26c61744feb
+  development: 2018-01-16T19:22:58-04:00   e4996ad92f5e72caf58ab1bc76c84920
 config/settings_schema.json:
   development: 2017-06-26T15:28:17-04:00   0262cd4de429bc4e87d2d867f15599ad
 layout/gift_card.liquid:
-  development: 2017-06-26T15:28:17-04:00   876374b0950e11992ce087d1d2bad3c8
+  development: 2018-01-16T19:36:44-04:00   b19ea90f626a6f82aa1f1ea80b100cc9
 layout/password.liquid:
-  development: 2017-06-26T15:28:17-04:00   f403680b0aa8921493e38dac1f82d270
+  development: 2018-01-16T19:36:47-04:00   3d32a620df20846ee6ff9de6e625f589
 layout/theme.liquid:
-  development: 2018-01-11T17:56:43-04:00   0bbcbefc0719a1284e03e97ff6658e42
+  development: 2018-01-16T19:36:50-04:00   a89b1d51f2cbcdf13c7bd64cc86915cc
 locales/de.json:
   development: 2017-06-26T15:28:19-04:00   573aafe6f0d5eeb69c7edf598c7e450f
 locales/en.default.json:
@@ -48,33 +52,33 @@ locales/pt-BR.json:
 locales/pt-PT.json:
   development: 2017-06-26T15:28:19-04:00   6bc34602b6d9aac5c70ebdda1ffc3680
 sections/article-template.liquid:
-  development: 2017-06-26T15:28:15-04:00   6850937aeb295fae74ca4dec2a6922bb
+  development: 2018-01-16T19:36:56-04:00   861873cc706ce3864adbfc28a8c62764
 sections/blog-template.liquid:
-  development: 2017-06-26T15:28:15-04:00   5757170836346c1082ffba4ef408857e
+  development: 2018-01-16T19:36:59-04:00   9dabbe10a31a54bbad5cc73e55430fe9
 sections/call-to-action.liquid:
-  development: 2018-01-16T18:05:37-04:00   19809d7af46a78b59c0d6580b26fc0cf
+  development: 2018-01-16T19:37:02-04:00   59373dd31b20d965ac0d8730f8d4a899
 sections/cart-template.liquid:
-  development: 2017-06-26T15:28:15-04:00   f07185af88ed866aaf60d6567f794269
+  development: 2018-01-16T19:37:05-04:00   bad3a5ab0b3d605f96c7c44fea2179e6
 sections/collection-list.liquid:
-  development: 2017-06-26T15:28:15-04:00   2f7ad110032ff1e86cc721301424f93a
+  development: 2018-01-16T19:37:08-04:00   6e78eff4abcb82f8780cbdb3e4202ba1
 sections/collection-template.liquid:
-  development: 2017-06-26T15:28:15-04:00   3c635f9290cde0a0c41cc9372d63d298
+  development: 2018-01-16T19:37:12-04:00   2e207205c174fd5560fffd8308370c20
 sections/collection.liquid:
-  development: 2017-06-26T15:28:15-04:00   95d018d510180f9b5223083da1bd928c
+  development: 2018-01-16T19:37:15-04:00   0194d67fa3e20da6b507d90847e63483
 sections/custom-content-about.liquid:
-  development: 2018-01-09T14:06:55-04:00   341abacbb00f0ed92be863feda2ecdc4
+  development: 2018-01-16T19:37:19-04:00   2d6b2a84407012dd5731a6053366d939
 sections/custom-content-support.liquid:
-  development: 2017-07-11T12:41:12-04:00   9abed1c1562136145fb81ea24137c7ac
+  development: 2018-01-16T19:37:22-04:00   5860df9a3fb0bea45cd5ef0064d02241
 sections/custom-content.liquid:
-  development: 2017-06-26T15:28:16-04:00   9abed1c1562136145fb81ea24137c7ac
+  development: 2018-01-16T19:37:25-04:00   bed8acd22c9740b1eac0ad032561d843
 sections/feature-columns-about.liquid:
-  development: 2018-01-16T15:52:44-04:00   073e470a6b0d6e84c698562a68042fb2
+  development: 2018-01-16T19:37:28-04:00   3fc618a022e6e84554913e7a198a308a
 sections/feature-columns-support.liquid:
-  development: 2018-01-16T18:00:51-04:00   073e470a6b0d6e84c698562a68042fb2
+  development: 2018-01-16T19:37:31-04:00   3fc618a022e6e84554913e7a198a308a
 sections/feature-columns.liquid:
-  development: 2018-01-16T15:50:28-04:00   3a61ae01ff7c4f119780ebf8181c6dc0
+  development: 2018-01-16T19:37:34-04:00   b3a6cc9c6fa5f6f314ddba39ea4dc814
 sections/feature-row.liquid:
-  development: 2017-07-10T09:36:10-04:00   f7716826775ce98aa03f7c7060ed14b7
+  development: 2018-01-16T19:37:37-04:00   b8d9081af48bbb3e270161df78d9878f
 sections/featured-blog.liquid:
   development: 2017-06-26T15:28:16-04:00   f15d6e0253e3b515b140e6988d9c80d7
 sections/featured-product.liquid:
@@ -82,7 +86,7 @@ sections/featured-product.liquid:
 sections/footer.liquid:
   development: 2018-01-16T15:06:39-04:00   990abbfd7c6eb2f1f3a06b5c22fa641e
 sections/header.liquid:
-  development: 2017-07-13T16:41:07-04:00   6bc4b07a745ae2a7729cd2ce8f59f743
+  development: 2018-01-16T20:19:46-04:00   371820df306320857e0399bc5ff4ab22
 sections/hero-general.liquid:
   development: 2018-01-16T17:22:03-04:00   d81731947c268fa442f55e07f4c95408
 sections/hero-product.liquid:
@@ -247,6 +251,40 @@ snippets/icon-youtube.liquid:
   development: 2017-06-26T15:28:18-04:00   9d72c5bc3eaa14a3e7aefd921881b1ae
 snippets/image-style.liquid:
   development: 2017-06-26T15:28:18-04:00   2d807ad1f4831d306d8e190b89d45c00
+snippets/ly-asset.liquid:
+  development: 2018-01-16T19:36:34-04:00   5b49384efc5cacdfe45e27b228307e34
+snippets/ly-content.liquid:
+  development: 2018-01-16T19:36:28-04:00   095052f126ee5161fcada2e2290ba219
+snippets/ly-description.liquid:
+  development: 2018-01-16T19:36:27-04:00   86e1fe1f2e31636fe0c4ffed32da1f94
+snippets/ly-excerpt.liquid:
+  development: 2018-01-16T19:36:30-04:00   70919a3411e18e541ee34113d4976d0c
+snippets/ly-excerpt_or_content.liquid:
+  development: 2018-01-16T19:36:31-04:00   bfd234fdc49db624f248c8234c6555f4
+snippets/ly-global.liquid:
+  development: 2018-01-16T20:00:56-04:00   056beb34f1a74156b6f09f2963e8f1be
+snippets/ly-html-parser.liquid:
+  development: 2018-01-16T19:36:35-04:00   fb84147bd33c373763f755f091fd6126
+snippets/ly-languages-switcher.liquid:
+  development: 2018-01-16T19:36:36-04:00   d8aac1ffa9facfa59964530125700a1b
+snippets/ly-languages.liquid:
+  development: 2018-01-16T19:36:34-04:00   0bab19d16b465e23dd146d5a0b1de959
+snippets/ly-option1.liquid:
+  development: 2018-01-16T19:36:28-04:00   af8bdfe813518d79a2027dfbbd814075
+snippets/ly-option2.liquid:
+  development: 2018-01-16T19:36:29-04:00   d4536660876ded467e7974fe13528a05
+snippets/ly-option3.liquid:
+  development: 2018-01-16T19:36:30-04:00   da42479c2300ebbf3ab8bbe10b2375d2
+snippets/ly-static-string.liquid:
+  development: 2018-01-16T19:36:32-04:00   11490aac64299b0cf845dd8a22a38021
+snippets/ly-static.liquid:
+  development: 2018-01-16T19:36:33-04:00   d5a990769c39390af93df1ce04f87b53
+snippets/ly-title.liquid:
+  development: 2018-01-16T19:36:25-04:00   b8173f56d2b3e6bda5823f2e9499a0ff
+snippets/ly-type.liquid:
+  development: 2018-01-16T19:36:26-04:00   505fba98ccf0585cfcceb4cb3ce575b2
+snippets/ly-vendor.liquid:
+  development: 2018-01-16T19:36:26-04:00   4ec53e693fb5ebfcf4efcca1cf538c75
 snippets/no-blocks.liquid:
   development: 2017-06-26T15:28:18-04:00   0cb7d758b6df0feb07ae5804b4b627fa
 snippets/pagination.liquid:

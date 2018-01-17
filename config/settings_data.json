@@ -4,7 +4,7 @@
     "color_body_text": "#788188",
     "color_sale_text": "#ff0000",
     "color_borders": "#e8e9eb",
-    "color_button": "#0084ff",
+    "color_button": "#ff1e6c",
     "color_button_text": "#fff",
     "color_small_button": "#fff",
     "color_small_button_text": "#3d4246",
@@ -77,7 +77,7 @@
       "feature-row": {
         "type": "feature-row",
         "settings": {
-          "image": "shopify:\/\/shop_images\/phone_1e3ec24d-9002-48b0-8ad1-a0121ee5203c.png",
+          "image": "shopify:\/\/shop_images\/data7.png",
           "layout": "right",
           "title": "Each year an average, 95 children die inside a vehicle due to heatstroke.",
           "text": "<p>Gardien was created to alert caregivers when a child has been left in a vehicle. Using the state of the art technology aimed to cover almost every scenario that could lead to such an unwanted event.<\/p>\n<p><\/p>",
@@ -128,7 +128,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/wheel_5696fef4-b63b-46ff-b660-ebbf58841158.png",
+              "image": "shopify:\/\/shop_images\/clock.png",
               "title": "Effortless installation",
               "text": "<p>Minimal installation required! 15 minutes or less is all it takes to install the hardware and app.<\/p>\n<p><\/p>",
               "button_label": "",
@@ -139,7 +139,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/heart.png",
+              "image": "shopify:\/\/shop_images\/phone_0e9f1f1f-af95-49ff-a7dd-1722eb78d408.png",
               "title": "Reliable Technology",
               "text": "<p>Our highly reliable low power system, compatible with iOS and Android, works for months using the latest Bluetooth and sensing technologies.<\/p>\n<p><\/p>",
               "button_label": "",
@@ -150,7 +150,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/set.png",
+              "image": "shopify:\/\/shop_images\/status.png",
               "title": "Monitors Critical Aspects",
               "text": "<p>Keep your child where it belongs, close to you. Temperature, Distance and Movement are some aspects Gardien is always looking for.<\/p>",
               "button_label": "",
@@ -235,7 +235,7 @@
           "alignment": "bottom",
           "title": "Your Memory  Assistant",
           "text": "<p>Gardien App<\/p>",
-          "last_text": "Avialable for iOS and Android devices.",
+          "last_text": "Gardien works in the background, giving you peace of mind that your child will never be forgotten.",
           "hero_size": "x-large",
           "text_size": "medium",
           "button_label": "pre-order now",
@@ -245,7 +245,7 @@
       "img-with-txt": {
         "type": "img-with-txt",
         "settings": {
-          "image": "shopify:\/\/shop_images\/app.png",
+          "image": "shopify:\/\/shop_images\/module.png",
           "layout": "left",
           "title": "Smartphone App Module",
           "text": "<p>Our app alerts the user with wireless alarms and alert modules such as text messages, emails, sounds, as well as visual and sensory alarms when the smartphone goes too far from the car seat. If these alerts are missed, the app will immediately reach out to a list of contacts including emergency services.<\/p>\n<p><\/p>",
@@ -256,7 +256,7 @@
       "img-with-txt-two": {
         "type": "img-with-txt-two",
         "settings": {
-          "image": "shopify:\/\/shop_images\/product_58978b68-2ee5-4a2b-821a-01d6caa705bd.png",
+          "image": "shopify:\/\/shop_images\/module2.png",
           "layout": "left",
           "title": "Car Seat Sensor Pad & Module",
           "text": "<p>Detects child&rsquo;s presence and activates the modules.&nbsp;<\/p>\n<p><\/p>",
@@ -271,7 +271,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_5e622792-cc1b-46d7-93db-0090218942a5.png",
+              "image": "shopify:\/\/shop_images\/bluetooth2.png",
               "title": "Bluetooth 4.0 (BLE)",
               "text": "",
               "button_label": "",
@@ -282,7 +282,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_98f4a2e7-f2ae-4468-9036-d0e1a4e25f42.png",
+              "image": "shopify:\/\/shop_images\/compa3.png",
               "title": "iOS 9 or later & Android 4.1 or later",
               "text": "",
               "button_label": "",
@@ -293,7 +293,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "image": "shopify:\/\/shop_images\/lang2.png",
               "title": "English & Spanish",
               "text": "",
               "button_label": "",
@@ -304,7 +304,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "image": "shopify:\/\/shop_images\/gps.png",
               "title": "GPS for accurate event location",
               "text": "",
               "button_label": "",
@@ -315,7 +315,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "image": "shopify:\/\/shop_images\/acelerometer.png",
               "title": "Accelerometer",
               "text": "",
               "button_label": "",
@@ -326,7 +326,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "image": "shopify:\/\/shop_images\/network.png",
               "title": "Cellular Network",
               "text": "",
               "button_label": "",
@@ -337,7 +337,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "image": "shopify:\/\/shop_images\/easy.png",
               "title": "Easy to use and install",
               "text": "",
               "button_label": "",
@@ -348,7 +348,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "image": "shopify:\/\/shop_images\/tested.png",
               "title": "Tested with real parents",
               "text": "",
               "button_label": "",
@@ -359,7 +359,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Asset_10_2x_65ef836c-9185-48cf-9f33-eb349ef11514.png",
+              "image": "shopify:\/\/shop_images\/send.png",
               "title": "Send alerts via text message and email",
               "text": "",
               "button_label": "",
@@ -400,11 +400,11 @@
       "img-width-txt-about": {
         "type": "img-width-txt-about",
         "settings": {
-          "image": "shopify:\/\/shop_images\/app_672d1244-ad2e-48e8-bf66-af1294ff1772.png",
+          "image": "shopify:\/\/shop_images\/child2.jpg",
           "layout": "right",
           "title": "Why this product is important?",
           "text": "<p>Heatstroke is one of the biggest threats to a child when left in a vehicle. In just 10 minutes, the temperature inside a vehicle can raise 19 degrees and a child's body overheats 3-5 times faster than an adult body.<\/p>",
-          "text2": "<p>Gardien was created to tackle this very real and often fatal, completely preventable problem. With Gardien, you will feel at ease knowing your child is safe and out of harm&rsquo;s way<\/p>",
+          "text2": "<p>Gardien was created to tackle this very real and often fatal, completely preventable problem. With Gardien, you will feel at ease knowing your child is safe and out of harm&rsquo;s way.<\/p>",
           "button_label": "",
           "button_link": ""
         }
@@ -423,9 +423,10 @@
           "1499805265908": {
             "type": "text",
             "settings": {
-              "title": "",
-              "text": "<p><em>It&rsquo;s a simple equation: an overloaded mind, a sudden change in routine, and a minor distraction is all it takes for a parent to leave their child behind. Have you ever forgotten your keys? That&rsquo;s your brain skipping a beat. Gardien was conceived to tackle this very real and often fatal, completely preventable problem.We is are parents helping parents, making sure this never happens to anyone.&rdquo;<\/em><\/p>",
-              "width": "66%",
+              "title": "We believe that kids are our biggest treasure.  They are not only our future, but the little ones we take care the most and for which we strive forward every day.  However, under all the stress we live today sometimes there is vulnerability in us, not because we want, it just happens.  Established in 2013, Momentum Creative Labs LLC has been dedicated to create solutions that can assist us in the everyday things.  Simple solutions using today’s technological advances without getting in our way. With that on mind we created Gardien Alert, to assist us and make sure we never forget the unforgettable.",
+              "text": "<p>It&rsquo;s a simple equation: an overloaded mind, a sudden change in routine, and a minor distraction is all it takes for a parent to leave their child behind. Have you ever forgotten your keys? That&rsquo;s your brain skipping a beat. Gardien was conceived to tackle this very real and often fatal, completely preventable problem. We is are parents helping parents, making sure this never happens to anyone.&rdquo;<\/p>",
+              "Display": "flex",
+              "width": "100%",
               "alignment": "top-middle",
               "align_text": "left"
             }
@@ -488,7 +489,7 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "",
+              "image": "shopify:\/\/shop_images\/stpr.png",
               "title": "",
               "text": "",
               "button_label": "",
@@ -544,7 +545,7 @@
       "img-with-txt-support-1": {
         "type": "img-with-txt-support-1",
         "settings": {
-          "image": "shopify:\/\/shop_images\/app_672d1244-ad2e-48e8-bf66-af1294ff1772.png",
+          "image": "",
           "layout": "left",
           "title": "User Guide",
           "text": "<p>Heatstroke is one of the biggest threats to a child when left in a vehicle. In just 10 minutes, the temperature inside a vehicle can raise 19 degrees and a child's body overheats 3-5 times faster than an adult body<\/p>",
@@ -556,7 +557,7 @@
       "img-with-txt-support-2": {
         "type": "img-with-txt-support-2",
         "settings": {
-          "image": "shopify:\/\/shop_images\/product_8be0d25b-d1ea-4310-931a-e71146173252.png",
+          "image": "",
           "layout": "left",
           "title": "Quick Start Guide",
           "text": "<p>Heatstroke is one of the biggest threats to a child when left in a vehicle. In just 10 minutes, the temperature inside a vehicle can raise 19 degrees and a child's body overheats 3-5 times faster than an adult body<\/p>",
@@ -568,11 +569,11 @@
       "img-with-txt-about-2": {
         "type": "img-with-txt-about-2",
         "settings": {
-          "image": "shopify:\/\/shop_images\/app_672d1244-ad2e-48e8-bf66-af1294ff1772.png",
+          "image": "shopify:\/\/shop_images\/parent2.jpg",
           "layout": "right",
           "title": "Why did we create Gardien?",
-          "text": "<p>Gardien was created by Mark Gomez and Victor ? both engineers as well as parents. We never thought it could happen to us, but it did. We unwillingly left our child in the car. We were fortunate enough to have returned to our vehicle before any damage was done, but this event shook us and triggered a sudden and deep empathy for parents who weren&rsquo;t as lucky.<\/p>",
-          "text2": "<p>As engineers we wanted to understand the cause behind such a fatal occurrence. This wasn&rsquo;t neglect, it&rsquo;s Forgotten Child Syndrome, and the statistics shocked us. Each year on average, 95 children die inside a vehicle due to heatstroke. It didn&rsquo;t matter who the person was and it isn&rsquo;t about how much love you have have for your child.<\/p>",
+          "text": "<p>Gardien was created by Mark Gomez and Victor both engineers as well as parents. We never thought it could happen to us, but it did. We unwillingly left our child in the car. We were fortunate enough to have returned to our vehicle before any damage was done, but this event shook us and triggered a sudden and deep empathy for parents who weren&rsquo;t as lucky.<\/p>",
+          "text2": "<p>As engineers we wanted to understand the cause behind such a fatal occurrence. This wasn&rsquo;t neglect, it&rsquo;s Forgotten Child Syndrome, and the statistics shocked us. Each year on average, 95 children die inside a vehicle due to heatstroke. It didn&rsquo;t matter who the person was and it isn&rsquo;t about how much love you have have for your child. Forgotten Child Syndrome doesn't discriminate, any person is susceptible to this phenomenon.<\/p>",
           "button_label": "",
           "button_link": ""
         }
@@ -582,13 +583,95 @@
         "settings": {
           "image": "",
           "alignment": "center",
-          "title": "Get the Gardien App",
-          "second_title": "My hero section",
-          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-          "hero_size": "x-small",
+          "title": "Get Gardien",
+          "second_title": "",
+          "text": "",
+          "hero_size": "medium",
           "text_size": "medium",
           "button_label": "pre-order now",
           "button_link": "shopify:\/\/products\/product-one"
+        }
+      },
+      "protocols": {
+        "type": "protocols",
+        "settings": {}
+      },
+      "hero-general": {
+        "type": "hero-general",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/test-bg.png",
+          "alignment": "center",
+          "title": "Termns",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "show_share_buttons": true
+        }
+      },
+      "feature-columns-about": {
+        "type": "feature-columns-about",
+        "blocks": {
+          "1516132418101": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/stpr.png",
+              "title": "Startup.pr Award",
+              "text": "<p>Awarded a $100K grant from Startup.pr in&nbsp;alliance with ACT Global &amp; the University of&nbsp;Turabo<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516132486422": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/guaya.png",
+              "title": "Bussines Dev Winners",
+              "text": "<p>One of the winners of the&nbsp;Enterprize&nbsp;Next&nbsp;business development competition in 2013<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516132505887": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/abc.png",
+              "title": "Best Safe Product Award",
+              "text": "<p>Awarded the best safety product by the PTPA&nbsp;organization at the 2015 ABC Kids Expo<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1516132418101",
+          "1516132486422",
+          "1516132505887"
+        ],
+        "settings": {
+          "title": "Text columns with images",
+          "align_text": "center"
+        }
+      },
+      "feature-columns-support": {
+        "type": "feature-columns-support",
+        "settings": {
+          "title": "Text columns with images",
+          "align_text": "left"
         }
       }
     },

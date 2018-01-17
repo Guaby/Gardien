@@ -184,7 +184,8 @@
             </div>
           {% if section.settings.align_logo == 'left' %}
             <div class="site-header__search small--hide">
-              {% include 'search-form' %}
+              {% comment %} {% include 'search-form' %} {% endcomment %}
+              {% include 'ly-languages-switcher' %}
             </div>
           {% endif %}
 

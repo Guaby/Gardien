@@ -1,7 +1,7 @@
-<div class="section-header text-center">
-  <h1 class="article__title">{{ article.title }}</h1>
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}<div class="section-header text-center">
+  <h1 class="article__title">{% comment %}ly_code_replace_for_[ article.title ]_begin{% endcomment %}{% include 'ly-title' with article %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}</h1>
   {% if section.settings.blog_show_author %}
-    <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+    <span class="article__author">{% comment %}ly_i18n_replace_for_[ 'blogs.article.by_author' | t: author: article.author ]_begin{% endcomment %}{% capture ly_template %}{{ 'blogs.article.by_author' | t: author: article.author }}{% endcapture %}{% include 'ly-static-string' with '7080795' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% assign replacement = article.author  %}{% assign ly_template = ly_template | replace: '[[author]]', replacement %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
   {% endif %}
 
   {% if section.settings.blog_show_date %}
@@ -12,7 +12,7 @@
 </div>
 
 <div class="rte" itemprop="articleBody">
-  {{ article.content }}
+  {% comment %}ly_code_replace_for_[ article.content ]_begin{% endcomment %}{% include 'ly-content' with article %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}
 </div>
 
 {% if section.settings.show_share_buttons %}

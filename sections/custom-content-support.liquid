@@ -1,4 +1,4 @@
-<div class="page-width">
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}<div class="page-width">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h4 class="h2">{{ section.settings.title | escape }}</h4>
@@ -96,7 +96,7 @@
                       {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
                       {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
                     </div>
-                    <div class="h4 grid-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
+                    <div class="h4 grid-view-item__title">{% comment %}ly_i18n_replace_for_[ 'homepage.onboarding.product_title' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'homepage.onboarding.product_title' | t }}{% endcapture %}{% include 'ly-static-string' with '7080846' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</div>
                     <div class="grid-view-item__meta">
                       {{ 1999 | money }}
                     </div>
