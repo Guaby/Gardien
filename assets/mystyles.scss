@@ -12,9 +12,17 @@ header.fixed-header {
 img {
     border-radius: 5px;
 }
+.site-header__logo-image {
+    width: 125px;
+    display: inline-block;
+}
 
 #shopify-section-img-with-txt {
     position: relative;
+}
+.lang-wrapper {
+    display: block;
+    margin: 0 15px;
 }
 .curve {
     position: absolute;
@@ -29,8 +37,13 @@ img {
     @media (max-width: 746px) {
         top: -23%;
     }
-
-
+}
+.my-h-s {
+    padding: 0 20px;
+}
+.custom__item-inner--text.boom,
+.video-wrapper.boom {
+    box-shadow: none;
 }
 
 .gray-bg {
@@ -64,7 +77,7 @@ img {
     width: 100%;
     height: 100%;
     padding: 0 110px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -78,7 +91,7 @@ img {
 }
 
 .rigth-wrap .content {
-    padding: 0 75px 0 0;
+    padding: 0 8vw 0 0;
 }
 
 .divider {
@@ -93,6 +106,7 @@ img {
 .video-wrapper {
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0px 30px 80px -5px #e416166b;
 }
 .product-intro {
     text-align: center;
@@ -316,13 +330,13 @@ li.action-btn.active a:focus {
     width: 600px;
     height: 430px;
     background-position: center center;
-    background-image: url(https://cdn.shopify.com/s/files/1/2122/5521/files/test2_6307c444-beb1-4dc3-a18e-0373cd59649c.png?316078164380069608);
+    background-image: url(https://cdn.shopify.com/s/files/1/2122/5521/files/test5.png?1230527292872256864);
     position: relative;
     top: 115px;
     -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     -webkit-background-size: cover;
-    transform: scale(1.2);
-    background-size: cover;
+            background-size: cover;
     @media screen and (max-width:994px) {
         right: 90px;
     }
@@ -335,6 +349,10 @@ li.action-btn.active a:focus {
 }
 .devider-wrap {
     margin-bottom: 75px;
+    @media screen and (max-width:752px) {
+        margin-bottom: 0px;
+        padding: 0 20px;
+    }
 }
 .offset-top {
     position: relative;
@@ -379,6 +397,10 @@ li.action-btn.active a:focus {
     width: 40%;
     margin: 0 auto;
     padding: 0 15px;
+    @media screen and (max-width:750px) {
+        display: block;
+        width: 100%;
+    }
 }
 .footer-logo-parent {
     width: auto;
@@ -396,12 +418,24 @@ li.action-btn.active a:focus {
     height: 45px;
     min-width: 45px;
     min-height: 45px;
-    margin: 0px 13px 0 0;
+    margin: 0px 13px 0 0; 
 }
 
 
 .ly-languages-switcher {
     background: transparent;
-    color: white;
+    color: white; 
     border: none;
+}
+
+
+
+
+
+
+/* =========== FAQ Styles =============  */
+
+.side {
+    width: 50%;
+    padding: 0 55px 0;
 }

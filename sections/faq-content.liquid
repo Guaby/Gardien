@@ -1,0 +1,155 @@
+<div id="faq" class="faq-container">
+    <h2 style="text-align:center">FAQ</h2>
+    <div class="page-width inner-faq">
+
+            <div class="side">
+                {% for block in section.blocks %}
+                    {% if block.type == "text" %}
+                    <div class="inner-content">
+                        <h4>{{block.settings.title}}</h4>
+                        {{block.settings.text}}
+                    </div>
+                    {% endif %}
+                {% endfor%}
+            </div>
+
+        <div class="side">
+            {% for block in section.blocks %}
+                {% if block.type == "advert" %}
+                <div class="inner-content">
+                     <h4>{{block.settings.second_hading}}</h4> 
+                     {{block.settings.second_text}} 
+                </div>
+                {% endif %}
+            {% endfor%}
+        </div>
+
+    </div>
+</div>
+
+{% schema %} 
+  {
+    "name": "FAQ Content",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "FAQ content"
+      },
+       {
+            "type": "text",
+            "id": "mytext",
+            "label": "Heading",
+            "default": "Talk about your brand"
+          }
+    ],
+    "blocks": [
+        {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Talk about your brand"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Container width",
+            "default": "50%",
+            "options": [
+              {
+                "value": "25%",
+                "label": "25%"
+              },
+              {
+                "value": "33%",
+                "label": "33%"
+              },
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "Vertical alignment",
+            "default": "center",
+            "options": [
+              {"value": "top-middle", "label": "Top"},
+              {"value": "center", "label": "Middle"},
+              {"value": "bottom-middle", "label": "Bottom"}
+            ]
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "Horizontal alignment",
+            "default": "left",
+            "options": [
+              {"value": "left", "label": "Left"},
+              {"value": "center", "label": "Centered"},
+              {"value": "right", "label": "Right"}
+            ]
+          }
+        ]
+      },
+      {
+        "type":"advert",
+        "name": "Second Column text",
+        "settings": [
+            {
+            "type": "text",
+            "id": "second_hading",
+            "label": "Heading",
+            "default": "Talk about your brand"
+          },
+          {
+            "type": "text",
+            "id": "second_text",
+            "label": "Text",
+            "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        ]
+      }
+    ], 
+    "presets": [
+    {
+        "name": "FAQContent",
+        "category": "Custome FAQ",
+        "blocks": [
+            {
+                "type": "text"
+            },
+            {
+                "type": "advert"
+            }
+       ]
+    }
+    ]
+  }
+{% endschema %}

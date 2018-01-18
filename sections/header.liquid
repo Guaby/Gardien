@@ -117,7 +117,8 @@
       {% if section.settings.align_logo == 'center' %}
         <div class="grid__item small--hide medium-up--one-quarter">
           <div class="site-header__search">
-            {% include 'search-form' %}
+            {% comment %} {% include 'search-form' %} {% endcomment %}
+            {% include 'ly-languages-switcher' %}
           </div>
         </div>
       {% endif %}
@@ -182,17 +183,20 @@
                 pre-order
               </a>
             </div>
-          {% if section.settings.align_logo == 'left' %}
-            <div class="site-header__search small--hide">
-              {% comment %} {% include 'search-form' %} {% endcomment %}
+            <div class="lang-wrapper">
               {% include 'ly-languages-switcher' %}
             </div>
-          {% endif %}
+          {% comment %} {% if section.settings.align_logo == 'left' %}
+            <div class="site-header__search small--hide">
+               {% include 'search-form' %} 
+            </div>
+          {% endif %} {% endcomment %}
 
-          <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
-            {% include 'icon-search' %}
+          {% comment %} <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
+             {% include 'icon-search' %} 
             <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
-          </button>
+          </button> {% endcomment %}
+           
 
           {% if shop.customer_accounts_enabled %}
             {% if customer %}
@@ -324,7 +328,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 75px;
     z-index: 999;
     margin: 0 auto;
     border-bottom-color: rgba(255, 255, 255, 0.65);
@@ -352,18 +356,18 @@
   }
 
 }
-.black, .inverted {
+{% comment %} .black, .inverted { 
     opacity: .5 !important;
 }
 .inverted {
     -webkit-filter: invert(100%); /* Safari */
     filter: invert(100%);
-}
+} {% endcomment %}
 {% endstylesheet %}
 
 {% javascript %}
 $('.site-header__menu').click(function(e){ 
     $('.icon').toggleClass('black');
     $('.site-header__logo-image').toggleClass('inverted');
-  });
+  }); 
 {% endjavascript %}
