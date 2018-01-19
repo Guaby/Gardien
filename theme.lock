@@ -18,7 +18,7 @@ assets/match-media.min.js:
 assets/myscript.js:
   development: 2018-01-17T14:14:48-04:00   ebb053be87e032bdaad3d4eb33b1e32d
 assets/mystyles.scss:
-  development: 2018-01-18T15:40:11-04:00   43c1537f896c6fa8a1fdfc9ebee6f7bb
+  development: 2018-01-19T16:21:05-04:00   70047b40243ccdc3ca1df348349f6248
 assets/password.js:
   development: 2017-06-26T15:28:17-04:00   c6b4c16234704306bbb6129d04d7e78e
 assets/theme.js:
@@ -68,7 +68,9 @@ sections/collection.liquid:
 sections/custom-content-about.liquid:
   development: 2018-01-16T19:37:19-04:00   2d6b2a84407012dd5731a6053366d939
 sections/custom-content-support.liquid:
-  development: 2018-01-17T16:42:38-04:00   c69ca11dbcf3b24c7ff2d1d71ce1f4ca
+  development: 2018-01-18T18:16:08-04:00   4f3bcc6f9f630e4caf1d3e870fdcd311
+sections/custom-content-support2.liquid:
+  development: 2018-01-18T18:46:23-04:00   4f3bcc6f9f630e4caf1d3e870fdcd311
 sections/custom-content.liquid:
   development: 2018-01-16T19:37:25-04:00   bed8acd22c9740b1eac0ad032561d843
 sections/custome-html-support.liquid:
@@ -88,23 +90,25 @@ sections/featured-blog.liquid:
 sections/featured-product.liquid:
   development: 2017-06-26T15:28:16-04:00   af4eae5c9ba777d4b2d7b541be32dc84
 sections/footer.liquid:
-  development: 2018-01-16T15:06:39-04:00   990abbfd7c6eb2f1f3a06b5c22fa641e
+  development: 2018-01-18T18:44:16-04:00   e4f955bd5e26dcb05cae9783b4d6d87e
 sections/header.liquid:
-  development: 2018-01-17T11:08:45-04:00   14cb1d61ea79e360877224ff81b717cd
+  development: 2018-01-19T14:16:46-04:00   1fe01c29177aa144b01a1690c549e368
 sections/hero-general.liquid:
   development: 2018-01-16T17:22:03-04:00   d81731947c268fa442f55e07f4c95408
 sections/hero-product.liquid:
   development: 2018-01-17T13:06:22-04:00   875d6faa2e057dad5489e62df05f9e57
 sections/hero-support.liquid:
-  development: 2017-07-11T12:35:30-04:00   c4d8c187fdd3645476acfc02d440f7c1
+  development: 2018-01-18T18:36:14-04:00   dcc0eb294628e3aae8fd2b17aad36681
 sections/hero.liquid:
   development: 2017-07-13T16:47:54-04:00   a5e9e7f7b47883295670c9336d61ac16
 sections/hero_about.liquid:
   development: 2018-01-09T14:50:44-04:00   0983c5160fbdb36cfc231b893699c0b8
 sections/image-bar.liquid:
   development: 2017-06-26T15:28:16-04:00   aa3e620e7da9659ad6c8a55ca2e596a8
+sections/img-w-txt-support.liquid:
+  development: 2018-01-18T18:47:57-04:00   69eba413d708a9b683754948719ebfb4
 sections/img-width-txt-about.liquid:
-  development: 2017-07-12T16:42:11-04:00   bd0938cb0bb405d9ed7279a58ef29a5f
+  development: 2018-01-19T13:49:04-04:00   f0e25675570d3fdbaed0e344bab1a1c7
 sections/img-with-txt-about-2.liquid:
   development: 2018-01-09T14:33:46-04:00   012b6c383c7cbd9ad1cec46e8eb690da
 sections/img-with-txt-support-1.liquid:
@@ -148,7 +152,7 @@ sections/simple_section.liquid:
 sections/slideshow.liquid:
   development: 2017-06-26T15:28:16-04:00   b45e3880ca33f6ac6de7c2b5eb9dd40b
 sections/test.liquid:
-  development: 2018-01-17T11:17:36-04:00   bf94af9c71b59b1ab6f925e34a6d4a2a
+  development: 2018-01-18T18:04:16-04:00   ac07d5cffc10a7321d4cb00f79135c05
 snippets/bgset.liquid:
   development: 2017-06-26T15:28:18-04:00   85889bbc39b57621f32fad66317366fc
 snippets/collection-grid-item.liquid:
@@ -346,7 +350,7 @@ templates/page.liquid:
 templates/page.product-alternate.liquid:
   development: 2018-01-17T11:44:31-04:00   7225f760497d057dacb608aedcf76828
 templates/page.support.liquid:
-  development: 2018-01-17T17:50:05-04:00   4cd326a7bc1a7ef911813fb67e802e41
+  development: 2018-01-18T18:57:11-04:00   8f95b8913cd8b43f90363390220c9c7b
 templates/password.liquid:
   development: 2017-06-26T15:28:19-04:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:

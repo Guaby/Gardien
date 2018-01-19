@@ -41,6 +41,9 @@ img {
 .my-h-s {
     padding: 0 20px;
 }
+.index-section {
+    padding-bottom: 0;
+}
 .custom__item-inner--text.boom,
 .video-wrapper.boom {
     box-shadow: none;
@@ -97,7 +100,7 @@ img {
 .divider {
     width: 100%;
     max-width: 980px;
-    margin: 0 auto;
+    margin: 55px auto 0; 
     height: 1px;
     background: #e6e6e6;
     position: relative;
@@ -154,10 +157,10 @@ li.action-btn a {
     border-radius: 30px;
 }
 li.action-btn.active a {
-    background: red;
+    background: #ff0059;
 }
 li.action-btn:hover a {
-    background: red;
+    background: #ff0059;
 }
 li.action-btn.active a:focus {
     opacity: 1;
@@ -225,6 +228,20 @@ li.action-btn.active a:focus {
 
 /*  ====== Media Querys ======*/
 
+@media (max-width: 990px) {
+    .preorder {
+        display: none;
+    }
+    #AccessibleNav {
+        width: 70%;
+    }
+}
+@media (max-width: 885px) {
+    .flexit {
+        padding: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .product_image_hero {
         top: 170px;
@@ -250,6 +267,23 @@ li.action-btn.active a:focus {
         padding-left: 0px;
         padding-right: 0px;
         margin-bottom: 65px;
+    }
+    .custom-content {
+        flex-direction: column;
+    }
+    .custom__item.small--one-half {
+        width: 100%;
+        margin: 0;
+    }
+    .custom__item-inner--text {
+        padding: 30px 0 !important;
+    }
+    .product_image_hero {
+        display: none;
+    }
+    .product_hero_left,
+    .product_hero_right {
+        width: 100% !important;
     }
 }
 
@@ -288,6 +322,12 @@ li.action-btn.active a:focus {
     .rigth-wrap .content {
         padding: 0;
     }
+    .feature-row__image-wrapper {
+        margin: 30px auto;
+    }
+    .site-footer {
+        margin-top: 0 !important;
+    }
 }
 
 @media (max-width: 540px) {
@@ -312,7 +352,12 @@ li.action-btn.active a:focus {
         font-size: 3em !important;
     }
 }
-
+.mega-title.white {
+    color: white !important;
+}
+.padding {
+    padding-bottom: 60px;
+}
 
 /* =========== About Styles =============  */
 #shopify-section-custom-content-about {
@@ -333,8 +378,8 @@ li.action-btn.active a:focus {
     background-image: url(https://cdn.shopify.com/s/files/1/2122/5521/files/test5.png?1230527292872256864);
     position: relative;
     top: 115px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.2) translateX(50px);
+            transform: scale(1.2) translateX(50px);
     -webkit-background-size: cover;
             background-size: cover;
     @media screen and (max-width:994px) {
