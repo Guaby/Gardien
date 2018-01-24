@@ -1,4 +1,4 @@
-{% if section.settings.message %}
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}{% if section.settings.message %}
   <style>
     .notification-bar {
       background-color: {{ section.settings.color_bg }};
@@ -31,10 +31,10 @@
         <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
           {% if linklists[child_list_handle].links != blank %}
             <button type="button" class="btn--link js-toggle-submenu mobile-nav__link" data-target="{{ child_list_handle }}" data-level="1">
-              {{ link.title }}
+              {% comment %}ly_code_replace_for_[ link.title ]_begin{% endcomment %}{% include 'ly-title' with link %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}
               <div class="mobile-nav__icon">
                 {% include 'icon-chevron-right' %}
-                <span class="icon__fallback-text">{{ 'layout.navigation.expand' | t }}</span>
+                <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'layout.navigation.expand' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.navigation.expand' | t }}{% endcapture %}{% include 'ly-static-string' with '7120933' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
               </div>
             </button>
             <ul class="mobile-nav__dropdown" data-parent="{{ child_list_handle }}" data-level="2">
@@ -43,11 +43,11 @@
                   <div class="mobile-nav__table-cell mobile-nav__return">
                     <button class="btn--link js-toggle-submenu mobile-nav__return-btn" type="button">
                       {% include 'icon-chevron-left' %}
-                      <span class="icon__fallback-text">{{ 'layout.navigation.collapse' | t }}</span>
+                      <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'layout.navigation.collapse' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.navigation.collapse' | t }}{% endcapture %}{% include 'ly-static-string' with '7120934' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
                     </button>
                   </div>
                   <a href="{{ link.url }}" class="mobile-nav__sublist-link mobile-nav__sublist-header">
-                    {{ link.title }}
+                    {% comment %}ly_code_replace_for_[ link.title ]_begin{% endcomment %}{% include 'ly-title' with link %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}
                   </a>
                 </div>
               </li>
@@ -55,7 +55,7 @@
               {% for childlink in linklists[child_list_handle].links %}
                 <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
                   <a href="{{ childlink.url }}" class="mobile-nav__sublist-link">
-                    {{ childlink.title | escape }}
+                    {% comment %}ly_code_replace_for_[ childlink.title | escape ]_begin{% endcomment %}{% include 'ly-title' with childlink %}{{ ly_translation | escape }}{% comment %}ly_code_replace_end{% endcomment %}
                   </a>
                 </li>
               {% endfor %}
@@ -63,7 +63,7 @@
             </ul>
           {% else %}
             <a href="{{ link.url }}" class="mobile-nav__link">
-              {{ link.title }}
+              {% comment %}ly_code_replace_for_[ link.title ]_begin{% endcomment %}{% include 'ly-title' with link %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}
             </a>
           {% endif %}
         </li>
@@ -142,7 +142,7 @@
           {% if section.settings.logo %}
             {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <a href="/" itemprop="url" class="site-header__logo-image{% if section.settings.align_logo == 'center' %} site-header__logo-image--centered{% endif %}">
-              {% capture logo_alt %}{{ section.settings.logo.alt | default: shop.name }}{% endcapture %}
+              {% capture logo_alt %}{{ section.settings.logo.alt | default: langify_shop_name }}{% endcapture %}
               <img class="lazyload js"
                    src="{{ section.settings.logo | img_url: '300x300' }}"
                    data-src="{{ img_url }}"
@@ -155,13 +155,13 @@
                 {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
                 <img src="{{ section.settings.logo | img_url: image_size }}"
                      srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-                     alt="{{ section.settings.logo.alt | default: shop.name }}"
+                     alt="{{ section.settings.logo.alt | default: langify_shop_name }}"
                      itemprop="logo"
                      style="max-width: {{ section.settings.logo_max_width }}px;">
               </noscript>
             </a>
           {% else %}
-            <a class="site-header__logo-link" href="/" itemprop="url">{{ shop.name }}</a>
+            <a class="site-header__logo-link" href="/" itemprop="url">{{ langify_shop_name }}</a>
           {% endif %}
         {% if template.name == 'index' %}
           </h1>
@@ -180,7 +180,7 @@
         <div class="site-header__icons-wrapper flex-right">
            <div class="site-header__search small--hide preorder">
               <a href="/products/product-one">
-                pre-order
+                <ly-as-7120932>pre-order</ly-as-7120932>
               </a>
             </div>
             <div class="lang-wrapper">
@@ -194,7 +194,7 @@
 
           {% comment %} <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
              {% include 'icon-search' %} 
-            <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+            <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'layout.navigation.search' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.navigation.search' | t }}{% endcapture %}{% include 'ly-static-string' with '7120935' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
           </button> {% endcomment %}
            
 
@@ -202,24 +202,24 @@
             {% if customer %}
               <a href="/account" class="site-header__account">
                 {% include 'icon-login' %}
-                <span class="icon__fallback-text">{{ 'layout.customer.account' | t }}</span>
+                <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'layout.customer.account' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.customer.account' | t }}{% endcapture %}{% include 'ly-static-string' with '7120936' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
               </a>
             {% else %}
               <a href="/account/login" class="site-header__account">
                 {% include 'icon-login' %}
-                <span class="icon__fallback-text">{{ 'layout.customer.log_in' | t }}</span>
+                <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'layout.customer.log_in' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.customer.log_in' | t }}{% endcapture %}{% include 'ly-static-string' with '7120937' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
               </a>
             {% endif %}
           {% endif %}
 
           <a href="/cart" class="site-header__cart">
             {% include 'icon-cart' %}
-            <span class="visually-hidden">{{ 'layout.cart.title' | t }}</span>
-            <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+            <span class="visually-hidden">{% comment %}ly_i18n_replace_for_[ 'layout.cart.title' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.cart.title' | t }}{% endcapture %}{% include 'ly-static-string' with '7120938' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
+            <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'layout.cart.title' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.cart.title' | t }}{% endcapture %}{% include 'ly-static-string' with '7120938' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
             {% if cart.item_count > 0 %}
               <div id="CartCount" class="site-header__cart-count">
                 <span>{{ cart.item_count }}</span>
-                <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+                <span class="icon__fallback-text medium-up--hide">{% comment %}ly_i18n_replace_for_[ 'layout.cart.items_count' | t: count: cart.item_count ]_begin{% endcomment %}{% if cart.item_count  == 0 %}{% capture ly_template %}{{ 'layout.cart.items_count' | t: count: cart.item_count }}{% endcapture %}{% include 'ly-static-string' with '7120940' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% assign replacement = cart.item_count  %}{% assign ly_template = ly_template | replace: '[[count]]', replacement %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% elsif cart.item_count  == 1 %}{% capture ly_template %}{{ 'layout.cart.items_count' | t: count: cart.item_count }}{% endcapture %}{% include 'ly-static-string' with '7120939' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% assign replacement = cart.item_count  %}{% assign ly_template = ly_template | replace: '[[count]]', replacement %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% elsif cart.item_count  == 2 %}{% capture ly_template %}{{ 'layout.cart.items_count' | t: count: cart.item_count }}{% endcapture %}{% include 'ly-static-string' with '7120940' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% assign replacement = cart.item_count  %}{% assign ly_template = ly_template | replace: '[[count]]', replacement %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% else %}{% capture ly_template %}{{ 'layout.cart.items_count' | t: count: cart.item_count }}{% endcapture %}{% include 'ly-static-string' with '7120940' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% assign replacement = cart.item_count  %}{% assign ly_template = ly_template | replace: '[[count]]', replacement %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
               </div>
             {% endif %}
           </a>
@@ -228,7 +228,7 @@
             <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
               {% include 'icon-hamburger' %}
               {% include 'icon-close' %}
-              <span class="icon__fallback-text">{{ 'layout.navigation.toggle' | t }}</span>
+              <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'layout.navigation.toggle' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'layout.navigation.toggle' | t }}{% endcapture %}{% include 'ly-static-string' with '7120943' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
             </button>
           {% endunless %}
         </div>

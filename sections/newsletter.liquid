@@ -1,4 +1,4 @@
-<div class="newsletter-section{% if section.settings.show_background %} index-section--newsletter-background{% endif %}">
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}<div class="newsletter-section{% if section.settings.show_background %} index-section--newsletter-background{% endif %}">
   <div class="page-width text-center">
     <div class="section-header text-center">
       {% if section.settings.title != blank %}
@@ -11,7 +11,7 @@
     {% form 'customer' %}
       {{ form.errors | default_errors }}
       {% if form.posted_successfully? %}
-        <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+        <p class="form--success">{% comment %}ly_i18n_replace_for_[ 'general.newsletter_form.confirmation' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'general.newsletter_form.confirmation' | t }}{% endcapture %}{% include 'ly-static-string' with '7120951' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</p>
       {% else %}
         <div class="input-group password__input-group">
           <input type="hidden" name="contact[tags]" value="newsletter">
@@ -20,12 +20,12 @@
             id="Email"
             class="input-group__field newsletter__input"
             value="{% if customer %}{{ customer.email }}{% endif %}"
-            placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+            placeholder="{% comment %}ly_i18n_replace_for_[ 'general.newsletter_form.email_placeholder' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'general.newsletter_form.email_placeholder' | t }}{% endcapture %}{% include 'ly-static-string' with '7120952' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}"
             autocorrect="off"
             autocapitalize="off">
           <span class="input-group__btn">
             <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
-              <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+              <span class="newsletter__submit-text--large">{% comment %}ly_i18n_replace_for_[ 'general.newsletter_form.submit' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'general.newsletter_form.submit' | t }}{% endcapture %}{% include 'ly-static-string' with '7120953' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
             </button>
           </span>
         </div>

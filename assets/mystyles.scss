@@ -1,6 +1,29 @@
 /*  180108 Gabriel Rosario stylessheet */
 
-
+@mixin my-gradient($from, $to, $stop: 100%) {
+    /* fallback/image non-cover color */
+    background-color: $from;
+    /* Firefox 3.6+ */
+    background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+    /* Safari 4+, Chrome 1+ */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+    /* Safari 5.1+, Chrome 10+ */
+    background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+    /* IE10+ */
+    background: -ms-linear-gradient(left, $from 0%, $to $stop);
+    /* Standard */
+    background: linear-gradient(to right, $from 0%, $to $stop);
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
+}
+.btn {
+    @include my-gradient(#ee4640, #ec2d8b);
+    &.btn--share {
+        background: transparent;
+    }
+}
 /* =============== global ================ */
 body {
     max-width: 1820px;
@@ -12,9 +35,88 @@ header.fixed-header {
 img {
     border-radius: 5px;
 }
+.mega-title,
+h2,
+h1,
+h5 {
+    text-transform: capitalize !important;
+}
 .site-header__logo-image {
     width: 125px;
-    display: inline-block;
+    display: inline-block; 
+}
+.hero__inner.about {
+    padding: 0 11vw;
+
+    .hero-content {
+        width: 75%;
+    }
+}
+.hero-video {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1; 
+        .bg-color-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @include my-gradient(#ee4640, #ec2d8b);
+            top: 0;
+            left: 0;
+            opacity: .97;
+        }
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.vid-frame {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+.site-header a,
+.site-header button {
+    color: white;
+    text-transform: uppercase;
+    font-size: .85em;
+    letter-spacing: 1px;
+}
+#shopify-section-hero_about {
+    padding-bottom: 0;
+}
+ #shopify-section-1498671531020,
+ #shopify-section-1498673394963 {
+     width: 80%;
+     margin: 0 auto;
+     position: relative;
+     top: -80px;
+     background: #fafafa;
+     padding: 65px 0;
+         @media only screen and (max-width: 749px) {
+              top: -60px !important;
+         }
+ }
+ #shopify-section-1498671531020 {
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+.product-btn {
+    box-shadow: 0 10px 40px -10px #0000004a;
+}
+
+
+#ly-languages-switcher {
+    margin-right: 22px;
+}
+.circle-link {
+    padding: 40px;
 }
 
 #shopify-section-img-with-txt {
@@ -41,9 +143,9 @@ img {
 .my-h-s {
     padding: 0 20px;
 }
-.index-section {
-    padding-bottom: 0;
-}
+// .index-section {
+//     padding-bottom: 0;
+// }
 .custom__item-inner--text.boom,
 .video-wrapper.boom {
     box-shadow: none;
@@ -368,7 +470,7 @@ li.action-btn.active a:focus {
 #shopify-section-img-with-txt-about-2 {
     background: #fbfbfb;
     position: relative;
-    top: -100px;
+    // top: -100px;
     z-index: 1;
 }
 .product_image_hero {

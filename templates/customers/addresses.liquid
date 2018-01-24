@@ -1,11 +1,11 @@
-{% paginate customer.addresses by 5 %}
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}{% paginate customer.addresses by 5 %}
 
 <div class="page-width text-center">
   <header class="section-header">
-    <h1>{{ 'customer.addresses.title' | t }}</h1>
-    <p><a href="/account">{{ 'customer.account.return' | t }}</a></p>
+    <h1>{% comment %}ly_i18n_replace_for_[ 'customer.addresses.title' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.title' | t }}{% endcapture %}{% include 'ly-static-string' with '7121054' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</h1>
+    <p><a href="/account">{% comment %}ly_i18n_replace_for_[ 'customer.account.return' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.account.return' | t }}{% endcapture %}{% include 'ly-static-string' with '7121055' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</a></p>
     <p>
-      <button type="button" class="btn address-new-toggle">{{ 'customer.addresses.add_new' | t }}</button>
+      <button type="button" class="btn address-new-toggle">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.add_new' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.add_new' | t }}{% endcapture %}{% include 'ly-static-string' with '7121056' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</button>
     </p>
   </header>
 </div>
@@ -18,61 +18,61 @@
       {% endcomment %}
       <div id="AddressNewForm" class="form-vertical hide">
         {% form 'customer_address', customer.new_address %}
-          <h2>{{ 'customer.addresses.add_new' | t }}</h2>
+          <h2>{% comment %}ly_i18n_replace_for_[ 'customer.addresses.add_new' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.add_new' | t }}{% endcapture %}{% include 'ly-static-string' with '7121056' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</h2>
 
           <div class="grid">
             <div class="grid__item medium-up--one-half">
-              <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
+              <label for="AddressFirstNameNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.first_name' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.first_name' | t }}{% endcapture %}{% include 'ly-static-string' with '7121057' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}">
             </div>
 
             <div class="grid__item medium-up--one-half">
-              <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
+              <label for="AddressLastNameNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.last_name' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.last_name' | t }}{% endcapture %}{% include 'ly-static-string' with '7121058' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}">
             </div>
           </div>
 
           <div class="grid">
             <div class="grid__item">
-              <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
+              <label for="AddressCompanyNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.company' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.company' | t }}{% endcapture %}{% include 'ly-static-string' with '7121059' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}">
 
-              <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
+              <label for="AddressAddress1New">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.address1' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.address1' | t }}{% endcapture %}{% include 'ly-static-string' with '7121060' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}">
 
-              <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
+              <label for="AddressAddress2New">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.address2' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.address2' | t }}{% endcapture %}{% include 'ly-static-string' with '7121061' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}">
             </div>
           </div>
 
           <div class="grid">
             <div class="grid__item medium-up--one-half">
-              <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+              <label for="AddressCityNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.city' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.city' | t }}{% endcapture %}{% include 'ly-static-string' with '7121062' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}">
             </div>
 
             <div class="grid__item medium-up--one-half">
-              <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+              <label for="AddressCountryNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.country' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.country' | t }}{% endcapture %}{% include 'ly-static-string' with '7121063' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <select id="AddressCountryNew" name="address[country]" data-default="{{ form.country }}">{{ country_option_tags }}</select>
             </div>
           </div>
 
           <div id="AddressProvinceContainerNew" style="display:none">
-            <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+            <label for="AddressProvinceNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.province' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.province' | t }}{% endcapture %}{% include 'ly-static-string' with '7121064' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
             <select id="AddressProvinceNew" name="address[province]" data-default="{{ form.province }}"></select>
           </div>
 
-          <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+          <label for="AddressZipNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.zip' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.zip' | t }}{% endcapture %}{% include 'ly-static-string' with '7121065' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
           <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters">
 
-          <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
+          <label for="AddressPhoneNew">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.phone' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.phone' | t }}{% endcapture %}{% include 'ly-static-string' with '7121066' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
           <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}">
 
           {{ form.set_as_default_checkbox }}
-          <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
+          <label for="address_default_address_new">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.set_default' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.set_default' | t }}{% endcapture %}{% include 'ly-static-string' with '7121067' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
 
-          <div><input type="submit" class="btn" value="{{ 'customer.addresses.add' | t }}"></div>
-          <div><button type="button" class="text-link address-new-toggle">{{ 'customer.addresses.cancel' | t }}</button></div>
+          <div><input type="submit" class="btn" value="{% comment %}ly_i18n_replace_for_[ 'customer.addresses.add' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.add' | t }}{% endcapture %}{% include 'ly-static-string' with '7121068' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}"></div>
+          <div><button type="button" class="text-link address-new-toggle">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.cancel' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.cancel' | t }}{% endcapture %}{% include 'ly-static-string' with '7121069' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</button></div>
 
         {% endform %}
         <hr>
@@ -85,77 +85,77 @@
       {% for address in customer.addresses %}
         <div class="address text-center">
           {% if address == customer.default_address %}
-            <p><strong>{{ 'customer.addresses.default' | t }}</strong></p>
+            <p><strong>{% comment %}ly_i18n_replace_for_[ 'customer.addresses.default' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.default' | t }}{% endcapture %}{% include 'ly-static-string' with '7121070' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</strong></p>
           {% endif %}
 
           {{ address | format_address }}
 
           <p>
-            <button type="button" class="btn btn--small address-edit-toggle" data-form-id="{{ address.id }}">{{ 'customer.addresses.edit' | t }}</button>
-            <button type="button" class="btn btn--secondary btn--small address-delete" data-form-id="{{ address.id }}" data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">{{ 'customer.addresses.delete' | t }}</button>
+            <button type="button" class="btn btn--small address-edit-toggle" data-form-id="{{ address.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.edit' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.edit' | t }}{% endcapture %}{% include 'ly-static-string' with '7121071' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</button>
+            <button type="button" class="btn btn--secondary btn--small address-delete" data-form-id="{{ address.id }}" data-confirm-message="{% comment %}ly_i18n_replace_for_[ 'customer.addresses.delete_confirm' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.delete_confirm' | t }}{% endcapture %}{% include 'ly-static-string' with '7121072' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.delete' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.delete' | t }}{% endcapture %}{% include 'ly-static-string' with '7121073' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</button>
           </p>
         </div>
 
         <div id="EditAddress_{{ address.id }}" class="form-vertical hide">
           {% form 'customer_address', address %}
 
-            <h4 class="h2">{{ 'customer.addresses.edit_address' | t }}</h4>
+            <h4 class="h2">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.edit_address' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.edit_address' | t }}{% endcapture %}{% include 'ly-static-string' with '7121074' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</h4>
 
             <div class="grid">
               <div class="grid__item medium-up--one-half">
-                <label for="AddressFirstName_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
+                <label for="AddressFirstName_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.first_name' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.first_name' | t }}{% endcapture %}{% include 'ly-static-string' with '7121057' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
                 <input type="text" id="AddressFirstName_{{ form.id }}" name="address[first_name]" value="{{ form.first_name }}">
               </div>
 
               <div class="grid__item medium-up--one-half">
-                <label for="AddressLastName_{{ form.id }}">{{ 'customer.addresses.last_name' | t }}</label>
+                <label for="AddressLastName_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.last_name' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.last_name' | t }}{% endcapture %}{% include 'ly-static-string' with '7121058' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
                 <input type="text" id="AddressLastName_{{ form.id }}" name="address[last_name]" value="{{ form.last_name }}">
               </div>
             </div>
 
-            <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
+            <label for="AddressCompany_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.company' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.company' | t }}{% endcapture %}{% include 'ly-static-string' with '7121059' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
             <input type="text" id="AddressCompany_{{ form.id }}" name="address[company]" value="{{ form.company }}">
 
-            <label for="AddressAddress1_{{ form.id }}">{{ 'customer.addresses.address1' | t }}</label>
+            <label for="AddressAddress1_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.address1' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.address1' | t }}{% endcapture %}{% include 'ly-static-string' with '7121060' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
             <input type="text" id="AddressAddress1_{{ form.id }}" name="address[address1]" value="{{ form.address1 }}">
 
-            <label for="AddressAddress2_{{ form.id }}">{{ 'customer.addresses.address2' | t }}</label>
+            <label for="AddressAddress2_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.address2' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.address2' | t }}{% endcapture %}{% include 'ly-static-string' with '7121061' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
             <input type="text" id="AddressAddress2_{{ form.id }}" name="address[address2]" value="{{ form.address2 }}">
 
             <div class="grid">
               <div class="grid__item medium-up--one-half">
-                <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
+                <label for="AddressCity_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.city' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.city' | t }}{% endcapture %}{% include 'ly-static-string' with '7121062' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
                 <input type="text" id="AddressCity_{{ form.id }}" name="address[city]" value="{{ form.city }}">
               </div>
               <div class="grid__item medium-up--one-half">
-                <label for="AddressCountry_{{ form.id }}">{{ 'customer.addresses.country' | t }}</label>
+                <label for="AddressCountry_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.country' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.country' | t }}{% endcapture %}{% include 'ly-static-string' with '7121063' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
                 <select id="AddressCountry_{{ form.id }}" class="address-country-option" data-form-id="{{ form.id }}" name="address[country]" data-default="{{ form.country }}">{{ country_option_tags }}</select>
               </div>
             </div>
 
             <div id="AddressProvinceContainer_{{ form.id }}" style="display:none">
-              <label for="AddressProvince_{{ form.id }}">{{ 'customer.addresses.province' | t }}</label>
+              <label for="AddressProvince_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.province' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.province' | t }}{% endcapture %}{% include 'ly-static-string' with '7121064' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
               <select id="AddressProvince_{{ form.id }}" name="address[province]" data-default="{{ form.province }}"></select>
             </div>
 
             <div class="grid">
               <div class="grid__item">
-                <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
+                <label for="AddressZip_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.zip' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.zip' | t }}{% endcapture %}{% include 'ly-static-string' with '7121065' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
                 <input type="text" id="AddressZip_{{ form.id }}" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters">
               </div>
 
               <div class="grid__item">
-                <label for="AddressPhone_{{ form.id }}">{{ 'customer.addresses.phone' | t }}</label>
+                <label for="AddressPhone_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.phone' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.phone' | t }}{% endcapture %}{% include 'ly-static-string' with '7121066' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
                 <input type="tel" id="AddressPhone_{{ form.id }}" name="address[phone]" value="{{ form.phone }}">
               </div>
             </div>
 
             <div class="text-center">
               {{ form.set_as_default_checkbox }}
-              <label for="address_default_address_{{ form.id }}">{{ 'customer.addresses.set_default' | t }}</label>
+              <label for="address_default_address_{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.set_default' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.set_default' | t }}{% endcapture %}{% include 'ly-static-string' with '7121067' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
 
-              <div><input type="submit" class="btn" value="{{ 'customer.addresses.update' | t }}"></div>
-              <div><button type="button" class="text-link address-edit-toggle" data-form-id="{{ form.id }}">{{ 'customer.addresses.cancel' | t }}</button></div>
+              <div><input type="submit" class="btn" value="{% comment %}ly_i18n_replace_for_[ 'customer.addresses.update' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.update' | t }}{% endcapture %}{% include 'ly-static-string' with '7121075' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}"></div>
+              <div><button type="button" class="text-link address-edit-toggle" data-form-id="{{ form.id }}">{% comment %}ly_i18n_replace_for_[ 'customer.addresses.cancel' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'customer.addresses.cancel' | t }}{% endcapture %}{% include 'ly-static-string' with '7121069' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</button></div>
             </div>
 
           {% endform %}

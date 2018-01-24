@@ -1,15 +1,15 @@
-<div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}<div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
 
   {% if section.blocks.size > 0 %}
     <div class="slideshow-wrapper">
       <button type="button" class="visually-hidden slideshow__pause" data-id="{{ section.id }}" aria-live="polite">
         <span class="slideshow__pause-stop">
           {% include 'icon-pause' %}
-          <span class="icon__fallback-text">{{ 'sections.slideshow.pause_slideshow' | t }}</span>
+          <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'sections.slideshow.pause_slideshow' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'sections.slideshow.pause_slideshow' | t }}{% endcapture %}{% include 'ly-static-string' with '7120989' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
         </span>
         <span class="slideshow__pause-play">
           {% include 'icon-play' %}
-          <span class="icon__fallback-text">{{ 'sections.slideshow.play_slideshow' | t }}</span>
+          <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'sections.slideshow.play_slideshow' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'sections.slideshow.play_slideshow' | t }}{% endcapture %}{% include 'ly-static-string' with '7120990' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
         </span>
       </button>
 
@@ -34,7 +34,7 @@
               {% unless block.settings.video_type == 'background' %}
                 <button type="button" class="text-link slideshow__video-control slideshow__video-control--close" data-controls="SlideshowVideo-{{ block.id }}">
                   {% include 'icon-close' %}
-                  <span class="icon__fallback-text">{{ 'sections.slideshow.close_video' | t }}</span>
+                  <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'sections.slideshow.close_video' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'sections.slideshow.close_video' | t }}{% endcapture %}{% include 'ly-static-string' with '7120991' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
                 </button>
               {% endunless %}
               {% if block.settings.video_url != blank %}
@@ -89,7 +89,7 @@
                       <div class="slideshow__video-control--play-wrapper{% if block.settings.title != blank or block.settings.subheading != blank %} slideshow__video-control--play-wrapper--push{% endif %}">
                         <button type="button" class="text-link slideshow__video-control slideshow__video-control--play" data-controls="SlideshowVideo-{{ block.id }}">
                           {% include 'icon-play-video' %}
-                          <span class="icon__fallback-text">{{ 'sections.slideshow.play_video' | t }}</span>
+                          <span class="icon__fallback-text">{% comment %}ly_i18n_replace_for_[ 'sections.slideshow.play_video' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'sections.slideshow.play_video' | t }}{% endcapture %}{% include 'ly-static-string' with '7120992' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</span>
                         </button>
                       </div>
                     {% endunless %}
@@ -109,7 +109,7 @@
 
   {% if section.blocks.size == 0 %}
     <div class="placeholder-noblocks">
-      {{ 'homepage.onboarding.no_content' | t }}
+      {% comment %}ly_i18n_replace_for_[ 'homepage.onboarding.no_content' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'homepage.onboarding.no_content' | t }}{% endcapture %}{% include 'ly-static-string' with '7120993' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}
     </div>
   {% endif %}
 </div>

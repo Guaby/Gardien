@@ -1,4 +1,4 @@
-{%- assign container_aspect_ratio = width | times: 1.0 | divided_by: height -%}
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}{%- assign container_aspect_ratio = width | times: 1.0 | divided_by: height -%}
 <style>
   {% if image.aspect_ratio < 1.0 %}
     {% assign maximum_width = height | times: image.aspect_ratio %}

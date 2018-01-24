@@ -1,4 +1,4 @@
-<style>
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}<style>
   .site-header {
     background: #ff0159;
     padding: 0 55px;
@@ -29,8 +29,8 @@ background: -moz-linear-gradient(left, #ee4640 0%, #ec2d8b 100%);
   // Alternate product templates can change values of
   // add to cart button, sold out, and unavailable states here.
   theme.productStrings = {
-    addToCart: {{ 'products.product.add_to_cart' | t | json }},
-    soldOut: {{ 'products.product.sold_out' | t | json }},
-    unavailable: {{ 'products.product.unavailable' | t | json }}
+    addToCart: {% comment %}ly_i18n_replace_for_[ 'products.product.add_to_cart' | t | json ]_begin{% endcomment %}{% capture ly_template %}{{ 'products.product.add_to_cart' | t | json }}{% endcapture %}{% include 'ly-static-string' with '7121149' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape | json }}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %},
+    soldOut: {% comment %}ly_i18n_replace_for_[ 'products.product.sold_out' | t | json ]_begin{% endcomment %}{% capture ly_template %}{{ 'products.product.sold_out' | t | json }}{% endcapture %}{% include 'ly-static-string' with '7121150' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape | json }}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %},
+    unavailable: {% comment %}ly_i18n_replace_for_[ 'products.product.unavailable' | t | json ]_begin{% endcomment %}{% capture ly_template %}{{ 'products.product.unavailable' | t | json }}{% endcapture %}{% include 'ly-static-string' with '7121151' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape | json }}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}
   }
 </script>

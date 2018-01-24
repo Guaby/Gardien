@@ -1,4 +1,4 @@
-
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}
 <div class="hero hero--{{ section.settings.hero_size }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box ratio-container lazyload js"
      {% if section.settings.image %}
      data-bgset="{% include 'bgset', image: section.settings.image %}"
@@ -15,7 +15,7 @@
       <div class="page-width flexit"> <!-- text-center -->
         <div class="hero-content">
         {% if section.settings.title != blank %}
-          <h2 class="h1 mega-title general hero_heading{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ page.title }}</h2>
+          <h2 class="h1 mega-title general hero_heading{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{% comment %}ly_code_replace_for_[ page.title ]_begin{% endcomment %}{% include 'ly-title' with page %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}</h2>
         {% endif %}
  
           <div class="hero-btn-container"> 
@@ -180,15 +180,7 @@
 }
 .video-wrapper.video-off {
   display: none !important;
-}
-.btn[href="/products/product-one"] {
-  background: #ee4640;
-  background: -moz-linear-gradient(left, #ee4640 0%, #ec2d8b 100%);
-  background: -webkit-linear-gradient(left, #ee4640 0%,#ec2d8b 100%);
-  background: linear-gradient(to right, #ee4640 0%,#ec2d8b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee4640', endColorstr='#ec2d8b',GradientType=1 );
-  color: white;
-}
+} 
 
 @media only screen and (max-width: 1370px) {
 

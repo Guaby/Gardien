@@ -1,4 +1,4 @@
-{% if collection.image %}
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}{% if collection.image %}
   {%- assign collection_image = collection.image -%}
 {% elsif collection.products.first and collection.products.first.images != empty %}
   {%- assign collection_image = collection.products.first.featured_image -%}
@@ -21,9 +21,9 @@
     <div class="collection-grid-item__title-wrapper">
       <h3 class="collection-grid-item__title">
         {% if collection.title == blank %}
-          {{ 'homepage.onboarding.collection_title' | t }}
+          {% comment %}ly_i18n_replace_for_[ 'homepage.onboarding.collection_title' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'homepage.onboarding.collection_title' | t }}{% endcapture %}{% include 'ly-static-string' with '7120994' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}
         {% else %}
-          {{ collection.title }}
+          {% comment %}ly_code_replace_for_[ collection.title ]_begin{% endcomment %}{% include 'ly-title' with collection %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}
         {% endif %}
       </h3>
     </div>
