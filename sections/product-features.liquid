@@ -1,11 +1,12 @@
-{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}<div class="page-width">
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}
+<div class="page-width">
 <!--   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h2>{{ section.settings.title | escape }}</h2>
     </div>
   {% endif %} -->
   <div class="section-header text-center">
-    <h1><ly-as-7120960>Features</ly-as-7120960></h1>
+    <h1 class="black"><ly-as-7120960>App Features</ly-as-7120960></h1>
   </div>
   <div class="grid {% unless section.blocks.size == 5 %}grid--uniform{% endunless %} grid--flush-bottom">
     {%- assign grid_item_width = 'medium-up--one-third' -%}

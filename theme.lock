@@ -16,9 +16,9 @@ assets/ly-select-box.js:
 assets/match-media.min.js:
   development: 2017-06-26T15:28:17-04:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/myscript.js:
-  development: 2018-01-17T14:14:48-04:00   ebb053be87e032bdaad3d4eb33b1e32d
+  development: 2018-01-25T19:12:35-04:00   8f2df978a79520b0ad1ca34386a22c15
 assets/mystyles.scss:
-  development: 2018-01-24T17:50:23-04:00   289e69505517a016bcfc1af2beb7e552
+  development: 2018-01-25T19:10:18-04:00   d285024519c449b732cecd5821e52268
 assets/password.js:
   development: 2017-06-26T15:28:17-04:00   c6b4c16234704306bbb6129d04d7e78e
 assets/theme.js:
@@ -56,7 +56,7 @@ sections/article-template.liquid:
 sections/blog-template.liquid:
   development: 2018-01-16T19:36:59-04:00   9dabbe10a31a54bbad5cc73e55430fe9
 sections/call-to-action.liquid:
-  development: 2018-01-24T14:00:19-04:00   b7674c3c3fd3ba414454911795ae25f6
+  development: 2018-01-25T15:57:35-04:00   432cd8ed8c30bb8bce91b915b5131486
 sections/cart-template.liquid:
   development: 2018-01-16T19:37:05-04:00   bad3a5ab0b3d605f96c7c44fea2179e6
 sections/collection-list.liquid:
@@ -138,7 +138,7 @@ sections/password-footer.liquid:
 sections/password-header.liquid:
   development: 2018-01-19T14:52:26-04:00   9a07f759974a5cd3cb448deca4dd8a2e
 sections/product-features.liquid:
-  development: 2018-01-19T14:52:29-04:00   0c6361bf79f9d0af10bd2a55db18f0ca
+  development: 2018-01-25T16:22:45-04:00   7d2d5c8fe39021aa836683356e1a2e8c
 sections/product-template.liquid:
   development: 2018-01-19T14:52:32-04:00   49abfb8c2aa8603abc6a2780400783f1
 sections/protocols.liquid:
@@ -342,7 +342,7 @@ templates/index.liquid:
 templates/list-collections.liquid:
   development: 2018-01-19T14:56:33-04:00   5c2721e7072652c10bbd73b609178091
 templates/page.about.liquid:
-  development: 2018-01-24T14:07:44-04:00   b5d457c3768e03dd9bf4f9a941ead325
+  development: 2018-01-25T19:08:53-04:00   a1c2f7e5a1b476311e54f0658c173e4a
 templates/page.contact.liquid:
   development: 2018-01-19T14:56:38-04:00   94ddbbcfb49ba0172f09bb36f4fbf378
 templates/page.liquid:
