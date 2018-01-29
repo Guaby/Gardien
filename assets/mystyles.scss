@@ -23,6 +23,12 @@
     &.btn--share {
         background: transparent;
     }
+    &.white {
+        color: white;
+    }
+}
+.small--hide.white a {
+    color: white;
 }
 /* =============== global ================ */
 body {

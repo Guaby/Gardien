@@ -168,9 +168,6 @@
 
    }
 
-
-
-
    function initSlider2() {
        let btnsContainer = protocols.eq(1).children().children('.proto-content').children('.content-nav');
        let btnsNav = protocols.eq(1).children().children().children().children('.proto-list');
@@ -389,7 +386,6 @@
                    slideContent.removeClass('active');
                }
            }
-
            // Show content
            function showContent() {
                let contentID = $(e.target.hash).attr('id');
@@ -491,7 +487,6 @@
        });
 
    }
-
    // slide 1
    initSlider();
    // slide 2

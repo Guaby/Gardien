@@ -18,7 +18,7 @@ assets/match-media.min.js:
 assets/myscript.js:
   development: 2018-01-25T19:12:35-04:00   8f2df978a79520b0ad1ca34386a22c15
 assets/mystyles.scss:
-  development: 2018-01-25T19:10:18-04:00   d285024519c449b732cecd5821e52268
+  development: 2018-01-29T10:55:17-04:00   0af8bd0762b77aca38f5dcf70f044c7b
 assets/password.js:
   development: 2017-06-26T15:28:17-04:00   c6b4c16234704306bbb6129d04d7e78e
 assets/theme.js:
@@ -58,7 +58,7 @@ sections/blog-template.liquid:
 sections/call-to-action.liquid:
   development: 2018-01-25T15:57:35-04:00   432cd8ed8c30bb8bce91b915b5131486
 sections/cart-template.liquid:
-  development: 2018-01-16T19:37:05-04:00   bad3a5ab0b3d605f96c7c44fea2179e6
+  development: 2018-01-29T10:54:31-04:00   20e019affb93277912aefe25ae378f0b
 sections/collection-list.liquid:
   development: 2018-01-16T19:37:08-04:00   6e78eff4abcb82f8780cbdb3e4202ba1
 sections/collection-template.liquid:
