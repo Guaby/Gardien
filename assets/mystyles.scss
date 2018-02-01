@@ -27,8 +27,22 @@
         color: white;
     }
 }
-.small--hide.white a {
+.small--hide.white a { 
     color: white;
+}
+.site-nav--active {
+    padding: 1px 4px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.hero__btn.white {
+    background: transparent;
+    margin-left: 15px;
+    border: 1px solid;
+        :hover {
+            color: gray;
+            background: white;
+        }
 }
 /* =============== global ================ */
 body {
@@ -116,17 +130,25 @@ h5 {
 .product-btn {
     box-shadow: 0 10px 40px -10px #0000004a;
 }
-
-
 #ly-languages-switcher {
     margin-right: 22px;
 }
 .circle-link {
     padding: 40px;
 }
-
 #shopify-section-img-with-txt {
     position: relative;
+}
+#shopify-section-feature-columns-about {
+    padding-bottom: 100px;
+}
+.my-form {
+    max-width: 1100px;
+    margin: 0 auto;
+        .form-inner {
+            width: 100%;
+            padding: 100px 0;
+        }
 }
 .lang-wrapper {
     display: block;
@@ -156,12 +178,10 @@ h5 {
 .video-wrapper.boom {
     box-shadow: none;
 }
-
 .gray-bg {
     background: #f7f7f7;
     padding-bottom: 100px;
 }
-
 .video-width-text-container {
     width: 100%;
     height: 80vh;
@@ -173,7 +193,6 @@ h5 {
     background: linear-gradient(to right, #ee4640 0%, #ec2d8b 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee4640', endColorstr='#ec2d8b', GradientType=1);
 }
-
 .video-width-text,
 .inner-content-wrapper {
     display: -webkit-flex;
@@ -183,7 +202,6 @@ h5 {
     justify-content: center;
     align-items: center;
 }
-
 .video-width-text {
     width: 100%;
     height: 100%;
@@ -191,12 +209,10 @@ h5 {
     max-width: 1400px;
     margin: 0 auto;
 }
-
 .rigth-wrap,
 .left-wrap {
     width: 50%;
 }
-
 .content p {
     color: white;
 }
@@ -204,7 +220,6 @@ h5 {
 .rigth-wrap .content {
     padding: 0 8vw 0 0;
 }
-
 .divider {
     width: 100%;
     max-width: 980px;
@@ -540,8 +555,6 @@ li.action-btn.active a:focus {
 .inner-wrapper.rte-setting {
     padding: 0 30px 0 0;
 }
-
-
 .f-links-wrapper {
     -webkit-display: flex;
     display: flex;
@@ -573,18 +586,11 @@ li.action-btn.active a:focus {
     min-height: 45px;
     margin: 0px 13px 0 0; 
 }
-
-
 .ly-languages-switcher {
     background: transparent;
     color: white; 
     border: none;
 }
-
-
-
-
-
 
 /* =========== FAQ Styles =============  */
 

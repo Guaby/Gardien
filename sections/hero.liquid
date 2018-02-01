@@ -40,21 +40,7 @@
   min-height: 150px;
   position: relative;
 }
-.play-container:before,
-.play-container:after {
-    position: absolute;
-}
-.play-container:before {
-    content: 'play video';
-    bottom: -100px;
-}
-.play-container:after {
-  content: '';
-  width: 1px;
-  height: 45px;
-  bottom: -65px;
-  background: #ffffff85;
-}
+
 .circle {
   width: 80px;
   height: 80px;
@@ -183,6 +169,7 @@
           <a href="{{ section.settings.button_link }}" class="btn hero__btn">
             {{ section.settings.button_label | escape }}
           </a>
+          <a id="watchV" class="btn hero__btn white">Watch Video</a>
           <a class="circle mobile">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 171 171" style="enable-background:new 0 0 171 171;" xml:space="preserve">
@@ -216,7 +203,7 @@
   </div>
    <div class="video-wrapper" id="heroVid">
     <div class="video-inner">
-      <iframe class="myVideo" src="//www.youtube.com/embed/1qkSkOn4h-A?rel=0&amp;showinfo=0&amp;vq=720" width="850" height="480" frameborder="0" allowfullscreen=""></iframe>
+      <iframe class="myVideo"  width="420" height="315" src="https://www.youtube.com/embed/LES0M43ucYw" frameborder="0" allowfullscreen></iframe>
       <span class="exitBtn"></span>
     </div>
   </div>
@@ -363,10 +350,16 @@ $(function(){
   let iframe = $('iframe.myVideo');
   let videoInner = $('.video-inner');
 
-  $('.circle').click(function() {
+  function showVid() {
     $('#heroVid').removeClass('video-off').addClass('video-on');
     iframe.css('display', 'block');
     videoInner.append(iframe);
+  }
+  $('#watchV').click(function() {
+    showVid();
+  });
+   $('.circle').click(function() {
+    showVid();
   });
 
   $('.exitBtn').click(function(e) {
