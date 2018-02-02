@@ -68,7 +68,7 @@ sections/collection.liquid:
 sections/custom-content-about.liquid:
   development: 2018-02-01T12:06:22-04:00   4ee4385100e3a046a4f079d21b7a5733
 sections/custom-content-support.liquid:
-  development: 2018-02-01T13:10:42-04:00   54e9242ae4216d20a36edb731b4668b0
+  development: 2018-02-02T16:55:45-04:00   6688e205a9b24e3b29850958db57a8dc
 sections/custom-content-support2.liquid:
   development: 2018-01-19T14:50:44-04:00   e098fc249fdc04efb87d1ce6b6a1a0e0
 sections/custom-content.liquid:
