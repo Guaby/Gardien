@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
 }
+
 .mega-title.hero_heading {
   width: 65%;
 }
@@ -123,11 +124,11 @@
 @media only screen and (max-width: 524px) {
 
   .hero_heading {
-    font-size: 2.5em;
-    margin: 10px 0 2px !important;
+    font-size: 3em;
+    margin: 10px 0 25px !important;
   }
   .hero__btn, .circle.mobile {
-    margin-top: 0;
+    margin-top: 20px;
   }
 
 }
@@ -140,6 +141,7 @@
   }
 
 }
+
 </style>
 {% endif %}
 
@@ -170,7 +172,7 @@
             {{ section.settings.button_label | escape }}
           </a>
           <a id="watchV" class="btn hero__btn white">Watch Video</a>
-          <a class="circle mobile">
+          {% comment %} <a class="circle mobile">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 171 171" style="enable-background:new 0 0 171 171;" xml:space="preserve">
               <style type="text/css">
@@ -182,7 +184,7 @@
                 <circle class="ply1" cx="85.5" cy="85.5" r="79"/>
               </g>
             </svg>
-          </a>
+          </a> {% endcomment %}
         {% endif %}
           </div>
       </div>
@@ -203,7 +205,7 @@
   </div>
    <div class="video-wrapper" id="heroVid">
     <div class="video-inner">
-      <iframe class="myVideo"  width="420" height="315" src="https://www.youtube.com/embed/LES0M43ucYw" frameborder="0" allowfullscreen></iframe>
+      <iframe class="myVideo"  width="420" height="315" src="https://www.youtube.com/embed/_rh_HT2teHc" frameborder="0" allowfullscreen></iframe>
       <span class="exitBtn"></span>
     </div>
   </div>

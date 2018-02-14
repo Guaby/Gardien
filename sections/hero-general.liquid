@@ -11,7 +11,7 @@
       {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
   {% endif %}
-  <div class="hero__inner">
+  <div id="hero" class="hero__inner">
       <div class="page-width flexit"> <!-- text-center -->
         <div class="hero-content">
         {% if section.settings.title != blank %}
@@ -23,7 +23,7 @@
           <a href="{{ section.settings.button_link }}" class="btn hero__btn">
             {{ section.settings.button_label | escape }}
           </a>
-          <a class="circle mobile">
+          {% comment %} <a class="circle mobile">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 171 171" style="enable-background:new 0 0 171 171;" xml:space="preserve">
               <style type="text/css">
@@ -35,7 +35,7 @@
                 <circle class="ply1" cx="85.5" cy="85.5" r="79"/>
               </g>
             </svg>
-          </a>
+          </a> {% endcomment %}
         {% endif %}
           </div>
       </div>
@@ -55,8 +55,7 @@
     </div>
   </div>
    <div class="video-wrapper" id="heroVid">
-    <div class="video-inner">
-      <iframe class="myVideo" src="//www.youtube.com/embed/1qkSkOn4h-A?rel=0&amp;showinfo=0&amp;vq=720" width="850" height="480" frameborder="0" allowfullscreen=""></iframe>
+    <div class="video-inner"> 
       <span class="exitBtn"></span>
     </div>
   </div>

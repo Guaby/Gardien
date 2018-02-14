@@ -2,7 +2,12 @@
 
 
     <div class="form-inner">
-        <h1>Contact us</h1>
+      <div class="tittle-w-btn">
+        <h1 class="no-margin">Contact us</h1>
+        <a href="http://m.me/Gardienalert" target="_blank" class="chat">
+          <img src="https://cdn.shopify.com/s/files/1/2122/5521/files/messenger.png?3396002191646377112" class="chat-img">
+        </a>
+      </div>
 
         {% form 'contact' %}
 
@@ -27,6 +32,9 @@
 
           <label for="ContactFormPhone">{% comment %}ly_i18n_replace_for_[ 'contact.form.phone' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'contact.form.phone' | t }}{% endcapture %}{% include 'ly-static-string' with '7121143' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
           <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+
+          <label for="ContactFormSerial">Product Serial Number</label>
+          <input type="tel" id="ContactFormSerial" name="contact[serial]" >
 
           <label for="ContactFormMessage">{% comment %}ly_i18n_replace_for_[ 'contact.form.message' | t ]_begin{% endcomment %}{% capture ly_template %}{{ 'contact.form.message' | t }}{% endcapture %}{% include 'ly-static-string' with '7121144' %}{% if ly_translation %}{% assign escape_content = true %}{% assign ly_template = ly_translation %}{% else %}{% assign escape_content = false %}{% endif %}{% if escape_content %}{{ ly_template | escape}}{% else %}{{ ly_template }}{% endif %}{% comment %}ly_i18n_replace_end{% endcomment %}</label>
           <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>

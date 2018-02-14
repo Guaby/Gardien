@@ -1,4 +1,5 @@
-{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}{% if section.settings.message %}
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}
+{% if section.settings.message %}
   <style>
     .notification-bar {
       background-color: {{ section.settings.color_bg }};
@@ -112,7 +113,7 @@
     {% endif %}
   {% endif %}
 
-  <header class="site-header{% if section.settings.align_logo == 'left' %} border-bottom logo--left{% else %} logo--center{% endif %}" role="banner">
+  <header class="site-header fixed-header {% if section.settings.align_logo == 'left' %} border-bottom logo--left{% else %} logo--center{% endif %}" role="banner">
     <div class="grid grid--no-gutters grid--table">
       {% if section.settings.align_logo == 'center' %}
         <div class="grid__item small--hide medium-up--one-quarter">
@@ -320,54 +321,9 @@
 {% endschema %}
 
 {% stylesheet %}
-.site-header {
-    background-color: transparent;
-    position: absolute;
-    padding: 0 5px;
-    width: 80%;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 75px;
-    z-index: 999;
-    margin: 0 auto;
-    border-bottom-color: rgba(255, 255, 255, 0.65);
-}
-.site-header a, .site-header button {
-    color: white;
-}
-
-.site-header__icons-wrapper.flex-right {
-    display: -webkit-flex;
-    -webkit-justify-content: flex-end;
-    -webkit-align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.mobile-nav-wrapper {
-  z-index: 999;
-}
-
-@media only screen and (max-width: 450px) {
-
-  .site-header {
-    width: 100%;
-  }
-
-}
-{% comment %} .black, .inverted { 
-    opacity: .5 !important;
-}
-.inverted {
-    -webkit-filter: invert(100%); /* Safari */
-    filter: invert(100%);
-} {% endcomment %}
+ 
 {% endstylesheet %}
 
 {% javascript %}
-$('.site-header__menu').click(function(e){ 
-    $('.icon').toggleClass('black');
-    $('.site-header__logo-image').toggleClass('inverted');
-  }); 
+
 {% endjavascript %}
