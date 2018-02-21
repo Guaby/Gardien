@@ -742,8 +742,8 @@ li.action-btn.active a:focus {
 
 .filter {
     width: 25%;
-    padding: 10px 0 10px 54px;
-    margin: 0 4%;
+    padding: 10px 0 10px 10px;
+    margin: 0;
 
     @media(max-width: 860px) {
         width: 100%;
@@ -759,6 +759,9 @@ li.action-btn.active a:focus {
     margin-bottom: 7px;
     display: inline-block;
     font-size: 1.1em;
+}
+.f-p {
+    max-width: 200px;
 }
 .secc {
     padding-top: 100px;
@@ -778,4 +781,11 @@ h2.color {
 
 #shopify-section-cart-template {
     margin-top: 45px;
+}
+
+
+/* =========== Product Styles =============  */
+
+.p-wrap {
+    padding-right: 15px;
 }
